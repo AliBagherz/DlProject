@@ -1,0 +1,29 @@
+Command line:
+   P8_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  10351
+
+Sun Jan 31 01:00:04 2021
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.14 Meg
+
+ Total Signals          : 51
+ Total Nets             : 33
+ Total Signal Drivers   : 15
+ Total Blocks           : 12
+ Total Primitive Blocks : 11
+ Total Processes        : 16
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 113
+Total Line Count : 14
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 4992.85 Meg
+
+Sun Jan 31 01:01:25 2021
+
