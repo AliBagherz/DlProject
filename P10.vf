@@ -1,0 +1,86 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : P10.vf
+// /___/   /\     Timestamp : 01/31/2021 01:07:21
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/project/DlProject/P10.vf -w C:/project/DlProject/P10.sch
+//Design Name: P10
+//Device: xc9500xl
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module P10(B0, 
+           B1, 
+           B2, 
+           B3, 
+           B4, 
+           B5, 
+           B6, 
+           B7, 
+           B8, 
+           B9, 
+           O0, 
+           O1, 
+           O2, 
+           O3, 
+           O4, 
+           O5, 
+           O6, 
+           O7, 
+           O8, 
+           O9);
+
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+    input B4;
+    input B5;
+    input B6;
+    input B7;
+    input B8;
+    input B9;
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+   output O4;
+   output O5;
+   output O6;
+   output O7;
+   output O8;
+   output O9;
+   
+   
+   BUF  XLXI_1 (.I(B0), 
+               .O(O6));
+   BUF  XLXI_2 (.I(B1), 
+               .O(O2));
+   BUF  XLXI_4 (.I(B2), 
+               .O(O0));
+   BUF  XLXI_5 (.I(B3), 
+               .O(O4));
+   BUF  XLXI_6 (.I(B4), 
+               .O(O1));
+   BUF  XLXI_7 (.I(B5), 
+               .O(O9));
+   BUF  XLXI_8 (.I(B6), 
+               .O(O3));
+   BUF  XLXI_9 (.I(B7), 
+               .O(O8));
+   BUF  XLXI_10 (.I(B8), 
+                .O(O7));
+   BUF  XLXI_11 (.I(B9), 
+                .O(O5));
+endmodule

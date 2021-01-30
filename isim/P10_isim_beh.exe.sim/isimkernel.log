@@ -1,0 +1,29 @@
+Command line:
+   P10_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  10391
+
+Sun Jan 31 01:07:26 2021
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.13 Meg
+
+ Total Signals          : 53
+ Total Nets             : 33
+ Total Signal Drivers   : 15
+ Total Blocks           : 12
+ Total Primitive Blocks : 11
+ Total Processes        : 16
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 113
+Total Line Count : 14
+
+ Total Simulation Time: 0.25 sec
+
+ Current Memory Usage: 4992.84 Meg
+
+Sun Jan 31 01:08:33 2021
+
