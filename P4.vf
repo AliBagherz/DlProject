@@ -1,0 +1,50 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : P4.vf
+// /___/   /\     Timestamp : 01/31/2021 00:05:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/project/DlProject/P4.vf -w C:/project/DlProject/P4.sch
+//Design Name: P4
+//Device: xc9500xl
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module P4(B0, 
+          B1, 
+          B2, 
+          B3, 
+          O0, 
+          O1, 
+          O2, 
+          O3);
+
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+   
+   
+   BUF  XLXI_1 (.I(B0), 
+               .O(O3));
+   BUF  XLXI_2 (.I(B1), 
+               .O(O0));
+   BUF  XLXI_3 (.I(B2), 
+               .O(O2));
+   BUF  XLXI_4 (.I(B3), 
+               .O(O1));
+endmodule
