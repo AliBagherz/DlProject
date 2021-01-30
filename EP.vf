@@ -6,13 +6,13 @@
 // /___/  \  /    Vendor: Xilinx 
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
-//  /   /         Filename : IP.vf
-// /___/   /\     Timestamp : 01/30/2021 23:47:28
+//  /   /         Filename : EP.vf
+// /___/   /\     Timestamp : 01/30/2021 23:26:58
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/project/DlProject/IP.vf -w C:/project/DlProject/IP.sch
-//Design Name: IP
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/project/DlProject/EP.vf -w C:/project/DlProject/EP.sch
+//Design Name: EP
 //Device: xc9500xl
 //Purpose:
 //    This verilog netlist is translated from an ECS schematic.It can be 
@@ -20,55 +20,59 @@
 //
 `timescale 1ns / 1ps
 
-module IP(B0, 
+module EP(B0, 
           B1, 
           B2, 
           B3, 
-          B4, 
-          B5, 
-          B6, 
-          B7, 
           O0, 
           O1, 
           O2, 
           O3, 
           O4, 
           O5, 
-          o6, 
+          O6, 
           O7);
 
     input B0;
     input B1;
     input B2;
     input B3;
-    input B4;
-    input B5;
-    input B6;
-    input B7;
    output O0;
    output O1;
    output O2;
    output O3;
    output O4;
    output O5;
-   output o6;
+   output O6;
    output O7;
    
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_21;
+   wire XLXN_22;
    
    BUF  XLXI_1 (.I(B0), 
-               .O(O3));
+               .O(XLXN_16));
    BUF  XLXI_2 (.I(B1), 
-               .O(O0));
-   BUF  XLXI_3 (.I(B2), 
-               .O(O2));
-   BUF  XLXI_4 (.I(B3), 
-               .O(O4));
-   BUF  XLXI_5 (.I(B4), 
-               .O(o6));
-   BUF  XLXI_6 (.I(B5), 
+               .O(XLXN_17));
+   BUF  XLXI_5 (.I(B2), 
+               .O(XLXN_21));
+   BUF  XLXI_6 (.I(B3), 
+               .O(XLXN_22));
+   BUF  XLXI_8 (.I(XLXN_16), 
                .O(O1));
-   BUF  XLXI_7 (.I(B6), 
+   BUF  XLXI_9 (.I(XLXN_16), 
                .O(O7));
-   BUF  XLXI_8 (.I(B7), 
-               .O(O5));
+   BUF  XLXI_10 (.I(XLXN_17), 
+                .O(O2));
+   BUF  XLXI_11 (.I(XLXN_17), 
+                .O(O4));
+   BUF  XLXI_12 (.I(XLXN_21), 
+                .O(O3));
+   BUF  XLXI_13 (.I(XLXN_21), 
+                .O(O5));
+   BUF  XLXI_14 (.I(XLXN_22), 
+                .O(O0));
+   BUF  XLXI_15 (.I(XLXN_22), 
+                .O(O6));
 endmodule

@@ -2,14 +2,14 @@ Command line:
    IP_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  2268
+     -socket  9834
 
-Sat Jan 30 12:42:59 2021
+Sat Jan 30 23:47:33 2021
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 5155.53 Meg
+ Current Memory Usage: 5150.15 Meg
 
  Total Signals          : 45
  Total Nets             : 29
@@ -19,10 +19,11 @@ Sat Jan 30 12:42:59 2021
  Total Processes        : 14
  Total Traceable Variables  : 18
  Total Scalar Nets and Variables : 109
+Total Line Count : 14
 
- Total Simulation Time: 0.09375 sec
+ Total Simulation Time: 0.03125 sec
 
- Current Memory Usage: 4683.67 Meg
+ Current Memory Usage: 5150.15 Meg
 
-Sat Jan 30 12:45:38 2021
+Sat Jan 30 23:47:36 2021
 
