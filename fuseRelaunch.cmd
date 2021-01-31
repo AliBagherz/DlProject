@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "C:/project/DlProject/P10_isim_beh.exe" -prj "C:/project/DlProject/P10_beh.prj" "work.P10" "work.glbl" 
+-intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Ali/Documents/Xilinx/CryptographyProject/LS1_isim_beh.exe" -prj "C:/Users/Ali/Documents/Xilinx/CryptographyProject/LS1_beh.prj" "work.LS1" "work.glbl" 
