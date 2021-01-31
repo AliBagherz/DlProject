@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Xor8Bit.vf
+// /___/   /\     Timestamp : 01/31/2021 11:53:00
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject/Xor8Bit.vf -w P:/Xilinx/Project/DlProject/Xor8Bit.sch
+//Design Name: Xor8Bit
+//Device: xc9500xl
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Xor8Bit(A0, 
+               A1, 
+               A2, 
+               A3, 
+               A4, 
+               A5, 
+               A6, 
+               A7, 
+               B0, 
+               B1, 
+               B2, 
+               B3, 
+               B4, 
+               B5, 
+               B6, 
+               B7, 
+               O0, 
+               O1, 
+               O2, 
+               O3, 
+               O4, 
+               O5, 
+               O6, 
+               O7);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input A4;
+    input A5;
+    input A6;
+    input A7;
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+    input B4;
+    input B5;
+    input B6;
+    input B7;
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+   output O4;
+   output O5;
+   output O6;
+   output O7;
+   
+   
+   XOR2  XLXI_1 (.I0(B0), 
+                .I1(A0), 
+                .O(O0));
+   XOR2  XLXI_2 (.I0(B1), 
+                .I1(A1), 
+                .O(O1));
+   XOR2  XLXI_3 (.I0(B2), 
+                .I1(A2), 
+                .O(O2));
+   XOR2  XLXI_4 (.I0(B3), 
+                .I1(A3), 
+                .O(O3));
+   XOR2  XLXI_5 (.I0(B4), 
+                .I1(A4), 
+                .O(O4));
+   XOR2  XLXI_6 (.I0(B5), 
+                .I1(A5), 
+                .O(O5));
+   XOR2  XLXI_7 (.I0(B6), 
+                .I1(A6), 
+                .O(O6));
+   XOR2  XLXI_8 (.I0(B7), 
+                .I1(A7), 
+                .O(O7));
+endmodule

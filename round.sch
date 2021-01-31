@@ -34,10 +34,6 @@
         <signal name="O1" />
         <signal name="O2" />
         <signal name="O3" />
-        <signal name="XLXN_29" />
-        <signal name="XLXN_31" />
-        <signal name="XLXN_32" />
-        <signal name="XLXN_33" />
         <port polarity="Input" name="I0" />
         <port polarity="Input" name="I1" />
         <port polarity="Input" name="I2" />
@@ -106,7 +102,7 @@
             <line x2="64" y1="-32" y2="-64" x1="128" />
             <line x2="128" y1="0" y2="-32" x1="64" />
         </blockdef>
-        <block symbolname="F_Function" name="XLXI_1">
+        <block symbolname="F_Function" name="FFunction">
             <blockpin signalname="A0" name="A0" />
             <blockpin signalname="A1" name="A1" />
             <blockpin signalname="A2" name="A2" />
@@ -124,7 +120,7 @@
             <blockpin signalname="XLXN_3" name="O2" />
             <blockpin signalname="XLXN_4" name="O3" />
         </block>
-        <block symbolname="Xor4Bit" name="XLXI_2">
+        <block symbolname="Xor4Bit" name="XOR4">
             <blockpin signalname="I0" name="A0" />
             <blockpin signalname="I1" name="A1" />
             <blockpin signalname="I2" name="A2" />
@@ -156,7 +152,7 @@
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="800" y="1296" name="XLXI_1" orien="R0">
+        <instance x="800" y="1296" name="FFunction" orien="R0">
         </instance>
         <branch name="XLXN_1">
             <wire x2="1216" y1="560" y2="560" x1="1184" />
@@ -170,7 +166,7 @@
         <branch name="XLXN_4">
             <wire x2="1216" y1="752" y2="752" x1="1184" />
         </branch>
-        <instance x="1216" y="784" name="XLXI_2" orien="R0">
+        <instance x="1216" y="784" name="XOR4" orien="R0">
         </instance>
         <branch name="I0">
             <wire x2="1216" y1="304" y2="304" x1="1184" />

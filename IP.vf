@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : IP.vf
-// /___/   /\     Timestamp : 01/30/2021 23:47:28
+// /___/   /\     Timestamp : 01/31/2021 11:53:00
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/project/DlProject/IP.vf -w C:/project/DlProject/IP.sch
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject/IP.vf -w P:/Xilinx/Project/DlProject/IP.sch
 //Design Name: IP
 //Device: xc9500xl
 //Purpose:
@@ -34,7 +34,7 @@ module IP(B0,
           O3, 
           O4, 
           O5, 
-          o6, 
+          O6, 
           O7);
 
     input B0;
@@ -51,7 +51,7 @@ module IP(B0,
    output O3;
    output O4;
    output O5;
-   output o6;
+   output O6;
    output O7;
    
    
@@ -64,7 +64,7 @@ module IP(B0,
    BUF  XLXI_4 (.I(B3), 
                .O(O4));
    BUF  XLXI_5 (.I(B4), 
-               .O(o6));
+               .O(O6));
    BUF  XLXI_6 (.I(B5), 
                .O(O1));
    BUF  XLXI_7 (.I(B6), 
