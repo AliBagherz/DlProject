@@ -1,0 +1,1347 @@
+MDF Database:  version 1.0
+MDF_INFO | Encrypt | XC9572XL-5-PC44
+MACROCELL | 3 | 1 | C0_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 9 | P6  | A2  | C3  | $OpTx$FX_DC$74  | $OpTx$FX_DC$70  | A5  | C7_OBUF10_  | EXP37_.EXP  | EXP38_.EXP
+INPUTMC | 6 | 1 | 14 | 3 | 15 | 2 | 16 | 2 | 9 | 3 | 0 | 3 | 2
+INPUTP | 3 | 92 | 63 | 3
+IMPORTS | 2 | 3 | 0 | 3 | 2
+EQ | 21 | 
+   !C0 = P6
+	$ A2 & C3 & !$OpTx$FX_DC$74 & !$OpTx$FX_DC$70
+	# !A2 & !C3 & !$OpTx$FX_DC$74 & !$OpTx$FX_DC$70
+	# A2 & A5 & C3 & $OpTx$FX_DC$74 & C7_OBUF10_
+	# !A2 & A5 & !C3 & $OpTx$FX_DC$74 & C7_OBUF10_
+;Imported pterms FB4_1
+	# A2 & A5 & !C3 & $OpTx$FX_DC$74 & !C7_OBUF10_
+	# A2 & !A5 & C3 & $OpTx$FX_DC$74 & !C7_OBUF10_
+	# A2 & !A5 & !C3 & $OpTx$FX_DC$74 & C7_OBUF10_
+	# !A2 & A5 & C3 & $OpTx$FX_DC$74 & !C7_OBUF10_
+	# !A2 & !A5 & C3 & $OpTx$FX_DC$74 & C7_OBUF10_
+;Imported pterms FB4_3
+	# !A2 & !A5 & !C3 & $OpTx$FX_DC$74 & !C7_OBUF10_
+	# A2 & A5 & !C3 & C7 & !$OpTx$FX_DC$74 & 
+	$OpTx$FX_DC$70
+	# A2 & !A5 & !C3 & !C7 & !$OpTx$FX_DC$74 & 
+	$OpTx$FX_DC$70
+	# !A2 & A5 & C3 & C7 & !$OpTx$FX_DC$74 & 
+	$OpTx$FX_DC$70
+	# !A2 & !A5 & C3 & !C7 & !$OpTx$FX_DC$74 & 
+	$OpTx$FX_DC$70;
+
+MACROCELL | 3 | 13 | C1_OBUF
+ATTRIBUTES | 264962 | 0
+OUTPUTMC | 1 | 3 | 14
+INPUTS | 13 | P3  | A2  | A5  | C3  | C7  | $OpTx$FX_DC$74  | $OpTx$FX_DC$70  | P7  | A8  | P0  | $OpTx$FX_DC$24  | $OpTx$FX_DC$31  | EXP40_.EXP
+INPUTMC | 7 | 1 | 14 | 2 | 1 | 3 | 15 | 2 | 16 | 2 | 5 | 2 | 3 | 3 | 12
+INPUTP | 6 | 90 | 63 | 3 | 7 | 83 | 89
+EXPORTS | 1 | 3 | 14
+IMPORTS | 1 | 3 | 12
+EQ | 13 | 
+   !C1 = P3
+	$ $OpTx$FX_DC$74 & $OpTx$FX_DC$70
+	# !A2 & A5 & !C3 & C7 & !$OpTx$FX_DC$74
+	# !A2 & !A5 & !C3 & !C7 & !$OpTx$FX_DC$74
+;Imported pterms FB4_13
+	# A2 & A5 & !C3 & !C7 & $OpTx$FX_DC$70
+	# A2 & !A5 & C3 & !C7 & !$OpTx$FX_DC$74
+	# A2 & !A5 & !C3 & C7 & $OpTx$FX_DC$70
+	# !A2 & A5 & C3 & !C7 & $OpTx$FX_DC$70
+	# !A2 & !A5 & C3 & C7 & $OpTx$FX_DC$70
+;Imported pterms FB4_12
+	# A2 & A5 & C3 & C7 & !$OpTx$FX_DC$74;
+    C1_OBUF.EXP  =  !P7 & !A8 & P0 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+
+MACROCELL | 0 | 14 | C2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 13 | P4  | C3  | C4  | C6  | $OpTx$FX_DC$61  | $OpTx$FX_DC$66  | A0  | A1  | $OpTx$FX_DC$75  | C3_OBUF/C3_OBUF_D13_  | $OpTx$FX_DC$59  | EXP13_.EXP  | EXP14_.EXP
+INPUTMC | 10 | 1 | 14 | 2 | 13 | 1 | 4 | 0 | 7 | 0 | 16 | 2 | 7 | 1 | 16 | 0 | 8 | 0 | 13 | 0 | 15
+INPUTP | 3 | 65 | 52 | 59
+IMPORTS | 2 | 0 | 13 | 0 | 15
+EQ | 29 | 
+   C2 = P4
+	$ !A0 & A1 & !C4 & !$OpTx$FX_DC$75 & 
+	!C3_OBUF/C3_OBUF_D13_
+	# C3 & !C4 & !C6 & $OpTx$FX_DC$59 & $OpTx$FX_DC$66
+	# !C3 & !C4 & C6 & $OpTx$FX_DC$61 & !$OpTx$FX_DC$66
+	# !C3 & !C4 & !C6 & $OpTx$FX_DC$61 & $OpTx$FX_DC$66
+;Imported pterms FB1_14
+	# A0 & A1 & !C4 & !$OpTx$FX_DC$75 & 
+	C3_OBUF/C3_OBUF_D13_
+	# !A0 & !A1 & C4 & !$OpTx$FX_DC$75 & 
+	!C3_OBUF/C3_OBUF_D13_
+	# C3 & !C4 & C6 & $OpTx$FX_DC$59 & !$OpTx$FX_DC$66
+	# !C3 & C4 & C6 & $OpTx$FX_DC$62 & !$OpTx$FX_DC$66
+	# !C3 & C4 & !C6 & $OpTx$FX_DC$62 & $OpTx$FX_DC$66
+;Imported pterms FB1_13
+	# A1 & !A9 & C4 & !C7 & $OpTx$FX_DC$75
+	# !A1 & A9 & !C4 & C7 & $OpTx$FX_DC$75
+	# A9 & C6 & C7 & $OpTx$FX_DC$75 & !$OpTx$FX_DC$66
+	# A9 & !C6 & C7 & $OpTx$FX_DC$75 & $OpTx$FX_DC$66
+	# !A9 & C6 & !C7 & $OpTx$FX_DC$75 & !$OpTx$FX_DC$66
+;Imported pterms FB1_16
+	# A0 & !A1 & C4 & !$OpTx$FX_DC$75 & 
+	C3_OBUF/C3_OBUF_D13_
+	# !A1 & !A9 & !C4 & !C7 & $OpTx$FX_DC$75
+	# !A9 & !C6 & !C7 & $OpTx$FX_DC$75 & $OpTx$FX_DC$66
+	# C3 & C4 & C6 & $OpTx$FX_DC$60 & !$OpTx$FX_DC$66
+	# C3 & C4 & !C6 & $OpTx$FX_DC$60 & $OpTx$FX_DC$66
+;Imported pterms FB1_17
+	# A1 & A9 & C4 & C7 & $OpTx$FX_DC$75;
+
+MACROCELL | 1 | 14 | C3_OBUF
+ATTRIBUTES | 396034 | 0
+OUTPUTMC | 15 | 3 | 1 | 3 | 13 | 0 | 14 | 0 | 4 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 13 | 0 | 15 | 3 | 0 | 3 | 2 | 3 | 11 | 3 | 12 | 1 | 15
+INPUTS | 10 | P1  | P4  | P6  | A0  | A3  | P3  | A6  | P7  | A8  | EXP25_.EXP
+INPUTMC | 1 | 1 | 13
+INPUTP | 9 | 87 | 65 | 92 | 52 | 82 | 90 | 68 | 7 | 83
+EXPORTS | 1 | 1 | 15
+IMPORTS | 1 | 1 | 13
+EQ | 28 | 
+   !C3 = P1
+	$ !P4 & !P6 & !A0 & A3
+;Imported pterms FB2_14
+	# P4 & !P6 & !A0 & !A3
+	# !P4 & P3 & !A6 & !P7 & A8 & A3
+	# !P4 & !P3 & A6 & !P7 & A8 & A3
+	# !P6 & A0 & P3 & A6 & !P7 & !A8
+	# !P6 & A0 & !P3 & !A6 & !P7 & !A8
+;Imported pterms FB2_13
+	# P4 & P3 & !A6 & !P7 & A8 & !A3
+	# P4 & !P3 & A6 & P7 & !A8 & !A3
+	# P4 & !P3 & A6 & !P7 & A8 & !A3
+	# !P4 & P3 & !A6 & P7 & !A8 & A3
+	# !P4 & !P3 & A6 & P7 & !A8 & A3
+;Imported pterms FB2_12
+	# P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+	# !P6 & A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_11
+	# P4 & P6 & A0 & !A3
+	# !P4 & P6 & A0 & A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# P6 & !A0 & !P3 & !A6 & P7 & A8;
+    C3_OBUF.EXP  =  !P4 & P6 & A0 & A3
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+
+MACROCELL | 2 | 13 | C4_OBUF
+ATTRIBUTES | 396034 | 0
+OUTPUTMC | 10 | 0 | 14 | 0 | 4 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 12 | 0 | 13 | 0 | 15 | 0 | 16
+INPUTS | 7 | P2  | P4  | A2  | P7  | A7  | $OpTx$FX_DC$32  | EXP33_.EXP
+INPUTMC | 2 | 2 | 0 | 2 | 12
+INPUTP | 5 | 21 | 65 | 63 | 7 | 13
+IMPORTS | 1 | 2 | 12
+EQ | 17 | 
+   !C4 = P2
+	$ P4 & A2 & P7 & A7 & !$OpTx$FX_DC$32
+	# P4 & A2 & !P7 & !A7 & !$OpTx$FX_DC$32
+	# !P4 & !A2 & P7 & A7 & !$OpTx$FX_DC$32
+	# !P4 & !A2 & !P7 & !A7 & !$OpTx$FX_DC$32
+;Imported pterms FB3_13
+	# P3 & !A5 & !$OpTx$FX_DC$32
+	# !P3 & A5 & !$OpTx$FX_DC$32
+	# !P4 & A2 & !P3 & !A5 & $OpTx$FX_DC$32
+	# !P4 & !A2 & P7 & !A7 & $OpTx$FX_DC$32
+	# !P4 & !A2 & !P7 & A7 & $OpTx$FX_DC$32
+;Imported pterms FB3_12
+	# P4 & A2 & P7 & !A7 & $OpTx$FX_DC$32
+	# P4 & A2 & !P7 & A7 & $OpTx$FX_DC$32
+	# P4 & !A2 & P3 & A5 & $OpTx$FX_DC$32
+	# P4 & !A2 & !P3 & !A5 & $OpTx$FX_DC$32
+	# !P4 & A2 & P3 & A5 & $OpTx$FX_DC$32;
+
+MACROCELL | 0 | 4 | C5_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 8 | P7  | A9  | C3  | C4  | C7  | $OpTx$FX_DC$28  | EXP7_.EXP  | EXP8_.EXP
+INPUTMC | 6 | 1 | 14 | 2 | 13 | 2 | 1 | 0 | 0 | 0 | 3 | 0 | 5
+INPUTP | 2 | 7 | 24
+IMPORTS | 2 | 0 | 3 | 0 | 5
+EQ | 25 | 
+   C5 = P7
+	$ A9 & C3 & C4 & !C7 & $OpTx$FX_DC$28
+	# A9 & !C3 & !C4 & !C7 & $OpTx$FX_DC$28
+	# !A9 & C3 & C4 & C7 & $OpTx$FX_DC$28
+	# !A9 & !C3 & !C4 & C7 & $OpTx$FX_DC$28
+;Imported pterms FB1_4
+	# A1 & A9 & !C4 & C7 & $OpTx$FX_DC$75
+	# A9 & C3 & !C4 & !C7 & !$OpTx$FX_DC$28
+	# A9 & !C3 & C4 & !C7 & !$OpTx$FX_DC$28
+	# !A9 & C3 & !C4 & C7 & !$OpTx$FX_DC$28
+	# !A9 & !C3 & C4 & C7 & !$OpTx$FX_DC$28
+;Imported pterms FB1_3
+	# A0 & A1 & !A9 & !C3 & C4 & !C7
+	# A0 & !A1 & A9 & !C3 & !C4 & C7
+	# A0 & !A1 & !A9 & !C3 & !C4 & !C7
+	# !A0 & A1 & !A9 & C3 & C4 & !C7
+	# !A0 & !A1 & A9 & C3 & !C4 & C7
+;Imported pterms FB1_6
+	# A1 & !A9 & !C4 & !C7 & $OpTx$FX_DC$75
+	# !A1 & A9 & C4 & C7 & $OpTx$FX_DC$75
+	# !A1 & !A9 & C4 & !C7 & $OpTx$FX_DC$75
+	# A0 & A1 & A9 & !C3 & C4 & C7
+	# !A0 & A1 & A9 & C3 & C4 & C7
+;Imported pterms FB1_7
+	# !A0 & !A1 & !A9 & C3 & !C4 & !C7;
+
+MACROCELL | 1 | 4 | C6_OBUF
+ATTRIBUTES | 396034 | 0
+OUTPUTMC | 5 | 0 | 14 | 0 | 12 | 0 | 13 | 0 | 15 | 1 | 3
+INPUTS | 11 | P0  | P4  | P3  | A6  | A3  | $OpTx$FX_DC$31  | P6  | A0  | P7  | A8  | EXP18_.EXP
+INPUTMC | 2 | 2 | 3 | 1 | 5
+INPUTP | 9 | 89 | 65 | 90 | 68 | 82 | 92 | 52 | 7 | 83
+EXPORTS | 1 | 1 | 3
+IMPORTS | 1 | 1 | 5
+EQ | 28 | 
+   !C6 = P0
+	$ P4 & P3 & A6 & A3 & !$OpTx$FX_DC$31
+;Imported pterms FB2_6
+	# !P4 & P3 & A6 & !A3 & !$OpTx$FX_DC$31
+	# P3 & A6 & P7 & A8 & $OpTx$FX_DC$31
+	# P3 & A6 & !P7 & !A8 & $OpTx$FX_DC$31
+	# P3 & !A6 & P7 & !A8 & $OpTx$FX_DC$31
+	# P3 & !A6 & !P7 & A8 & $OpTx$FX_DC$31
+;Imported pterms FB2_7
+	# P4 & !P3 & !A6 & A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & !A6 & !A3 & !$OpTx$FX_DC$31
+	# !P3 & A6 & P7 & !A8 & $OpTx$FX_DC$31
+	# !P3 & A6 & !P7 & A8 & $OpTx$FX_DC$31
+	# !P3 & !A6 & P7 & A8 & $OpTx$FX_DC$31
+;Imported pterms FB2_8
+	# !P3 & !A6 & !P7 & !A8 & $OpTx$FX_DC$31
+	# P4 & P3 & !A6 & P7 & A8 & !A3 & !$OpTx$FX_DC$31
+	# P4 & P3 & !A6 & !P7 & !A8 & !A3 & !$OpTx$FX_DC$31
+	# !P4 & P3 & !A6 & P7 & A8 & A3 & !$OpTx$FX_DC$31
+	# !P4 & P3 & !A6 & !P7 & !A8 & A3 & !$OpTx$FX_DC$31
+;Imported pterms FB2_9
+	# P4 & !P3 & A6 & P7 & A8 & !A3 & !$OpTx$FX_DC$31
+	# P4 & !P3 & A6 & !P7 & !A8 & !A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & P7 & A8 & A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & !P7 & !A8 & A3 & !$OpTx$FX_DC$31;
+    C6_OBUF.EXP  =  P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+	# !P6 & A0 & !P3 & !A6 & !P7 & !A8
+
+MACROCELL | 2 | 1 | C7_OBUF
+ATTRIBUTES | 396034 | 0
+OUTPUTMC | 19 | 0 | 16 | 3 | 13 | 0 | 12 | 0 | 4 | 0 | 7 | 0 | 8 | 0 | 1 | 0 | 11 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 9 | 0 | 10 | 0 | 15 | 3 | 2 | 3 | 11 | 3 | 12
+INPUTS | 8 | P5  | P4  | A2  | P3  | A5  | $OpTx$FX_DC$30  | $OpTx$FX_DC$32.EXP  | EXP28_.EXP
+INPUTMC | 3 | 2 | 4 | 2 | 0 | 2 | 2
+INPUTP | 5 | 10 | 65 | 63 | 90 | 3
+IMPORTS | 2 | 2 | 0 | 2 | 2
+EQ | 20 | 
+   C7 = P5
+	$ P4 & A2 & P3 & A5 & !$OpTx$FX_DC$30
+	# P4 & A2 & P3 & !A5 & $OpTx$FX_DC$30
+	# P4 & A2 & !P3 & A5 & $OpTx$FX_DC$30
+	# P4 & A2 & !P3 & !A5 & !$OpTx$FX_DC$30
+;Imported pterms FB3_1
+	# P4 & !A2 & P6 & !A9 & $OpTx$FX_DC$30
+	# P4 & !A2 & !P6 & A9 & $OpTx$FX_DC$30
+	# P4 & !A2 & P3 & !A5 & !$OpTx$FX_DC$30
+;Imported pterms FB3_3
+	# P4 & !A2 & !P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & A2 & P6 & !A9 & $OpTx$FX_DC$30
+	# !P4 & A2 & !P6 & A9 & $OpTx$FX_DC$30
+	# !P4 & A2 & P3 & !A5 & !$OpTx$FX_DC$30
+	# !P4 & A2 & !P3 & A5 & !$OpTx$FX_DC$30
+;Imported pterms FB3_4
+	# !P4 & !A2 & P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & !A2 & P3 & !A5 & $OpTx$FX_DC$30
+	# !P4 & !A2 & !P3 & A5 & $OpTx$FX_DC$30
+	# !P4 & !A2 & !P3 & !A5 & !$OpTx$FX_DC$30;
+
+MACROCELL | 3 | 15 | $OpTx$FX_DC$74
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 6 | 3 | 1 | 3 | 13 | 3 | 0 | 3 | 2 | 3 | 11 | 3 | 12
+INPUTS | 8 | A7  | P4  | A3  | P0  | $OpTx$FX_DC$24  | $OpTx$FX_DC$31  | EXP41_.EXP  | EXP42_.EXP
+INPUTMC | 4 | 2 | 5 | 2 | 3 | 3 | 14 | 3 | 16
+INPUTP | 4 | 13 | 65 | 82 | 89
+IMPORTS | 2 | 3 | 14 | 3 | 16
+EQ | 29 | 
+   $OpTx$FX_DC$74 = A7
+	$ P4 & A3 & P0 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P4 & A3 & !P0 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P4 & !A3 & P0 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & A3 & P0 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+;Imported pterms FB4_15
+	# !P4 & !A3 & P0 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & !A3 & !P0 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P7 & A8 & P0 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# P7 & A8 & !P0 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# P7 & !A8 & P0 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+;Imported pterms FB4_14
+	# !P7 & !A8 & P0 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+;Imported pterms FB4_17
+	# P7 & !A8 & P0 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P7 & !A8 & !P0 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# !P7 & A8 & P0 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# !P7 & A8 & P0 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P7 & A8 & !P0 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+;Imported pterms FB4_18
+	# !P7 & !A8 & !P0 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# P4 & P7 & A8 & !A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+	# P4 & !P7 & !A8 & !A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+	# !P4 & P7 & A8 & A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+	# !P4 & !P7 & !A8 & A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31;
+
+MACROCELL | 2 | 5 | $OpTx$FX_DC$24
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 8 | 3 | 15 | 2 | 7 | 2 | 5 | 2 | 6 | 3 | 13 | 3 | 14 | 3 | 16 | 3 | 17
+INPUTS | 7 | A6  | P3  | P4  | A8  | A3  | $OpTx$FX_DC$24  | $OpTx$FX_DC$31
+INPUTMC | 2 | 2 | 5 | 2 | 3
+INPUTP | 5 | 68 | 90 | 65 | 83 | 82
+EXPORTS | 1 | 2 | 6
+EQ | 5 | 
+   !$OpTx$FX_DC$24 = A6
+	$ P3;
+    $OpTx$FX_DC$24.EXP  =  !P4 & A8 & A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & A8 & !A3 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & !A8 & !A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+
+MACROCELL | 2 | 3 | $OpTx$FX_DC$31
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 14 | 1 | 4 | 3 | 15 | 2 | 7 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 2 | 5 | 2 | 6 | 3 | 13 | 3 | 14 | 3 | 16 | 3 | 17 | 2 | 2
+INPUTS | 7 | A0  | P4  | A2  | P3  | A5  | $OpTx$FX_DC$30  | $OpTx$FX_DC$30.EXP
+INPUTMC | 2 | 2 | 4 | 2 | 4
+INPUTP | 5 | 52 | 65 | 63 | 90 | 3
+EXPORTS | 1 | 2 | 2
+IMPORTS | 1 | 2 | 4
+EQ | 7 | 
+   !$OpTx$FX_DC$31 = A0
+	$ ;Imported pterms FB3_5
+	  P6;
+    $OpTx$FX_DC$31.EXP  =  !P4 & !A2 & P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & !A2 & P3 & !A5 & $OpTx$FX_DC$30
+	# !P4 & !A2 & !P3 & A5 & $OpTx$FX_DC$30
+	# !P4 & !A2 & !P3 & !A5 & !$OpTx$FX_DC$30
+
+MACROCELL | 2 | 16 | $OpTx$FX_DC$70
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 4 | 3 | 1 | 3 | 13 | 3 | 2 | 3 | 12
+INPUTS | 8 | A4  | P3  | A5  | P2  | $OpTx$FX_DC$32  | $OpTx$FX_DC$25  | EXP35_.EXP  | EXP36_.EXP
+INPUTMC | 4 | 2 | 0 | 0 | 17 | 2 | 15 | 2 | 17
+INPUTP | 4 | 20 | 90 | 3 | 21
+IMPORTS | 2 | 2 | 15 | 2 | 17
+EQ | 22 | 
+   !$OpTx$FX_DC$70 = A4
+	$ P3 & !A5 & !P2 & !$OpTx$FX_DC$32
+	# !P3 & A5 & !P2 & !$OpTx$FX_DC$32
+	# P3 & A5 & P2 & !$OpTx$FX_DC$32 & $OpTx$FX_DC$25
+	# P3 & A5 & !P2 & $OpTx$FX_DC$32 & $OpTx$FX_DC$25
+;Imported pterms FB3_16
+	# P3 & !A5 & P2 & $OpTx$FX_DC$32 & $OpTx$FX_DC$25
+	# !P3 & A5 & P2 & $OpTx$FX_DC$32 & $OpTx$FX_DC$25
+	# !P3 & !A5 & P2 & !$OpTx$FX_DC$32 & $OpTx$FX_DC$25
+	# !P3 & !A5 & !P2 & $OpTx$FX_DC$32 & $OpTx$FX_DC$25
+	# P7 & A7 & P2 & $OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+;Imported pterms FB3_15
+	# P3 & P7 & !A7 & A5 & P2 & !$OpTx$FX_DC$32
+	# P3 & !P7 & A7 & A5 & P2 & !$OpTx$FX_DC$32
+	# !P3 & P7 & !A7 & !A5 & P2 & !$OpTx$FX_DC$32
+	# !P3 & !P7 & A7 & !A5 & P2 & !$OpTx$FX_DC$32
+;Imported pterms FB3_18
+	# P7 & A7 & !P2 & !$OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+	# P7 & !A7 & !P2 & $OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+	# !P7 & A7 & !P2 & $OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+	# !P7 & !A7 & P2 & $OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+	# !P7 & !A7 & !P2 & !$OpTx$FX_DC$32 & !$OpTx$FX_DC$25;
+
+MACROCELL | 2 | 0 | $OpTx$FX_DC$32
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 8 | 2 | 13 | 2 | 16 | 2 | 11 | 2 | 12 | 2 | 14 | 2 | 15 | 2 | 17 | 2 | 1
+INPUTS | 7 | A9  | P6  | P4  | A2  | $OpTx$FX_DC$30  | P3  | A5
+INPUTMC | 1 | 2 | 4
+INPUTP | 6 | 24 | 92 | 65 | 63 | 90 | 3
+EXPORTS | 1 | 2 | 1
+EQ | 5 | 
+   $OpTx$FX_DC$32 = A9
+	$ P6;
+    $OpTx$FX_DC$32.EXP  =  P4 & !A2 & P6 & !A9 & $OpTx$FX_DC$30
+	# P4 & !A2 & !P6 & A9 & $OpTx$FX_DC$30
+	# P4 & !A2 & P3 & !A5 & !$OpTx$FX_DC$30
+
+MACROCELL | 0 | 17 | $OpTx$FX_DC$25
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 4 | 2 | 16 | 2 | 15 | 2 | 17 | 0 | 16
+INPUTS | 5 | A2  | P4  | A8  | P1  | $OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6
+INPUTMC | 1 | 1 | 0
+INPUTP | 4 | 63 | 65 | 83 | 87
+EXPORTS | 1 | 0 | 16
+EQ | 4 | 
+   $OpTx$FX_DC$25 = A2
+	$ P4;
+    $OpTx$FX_DC$25.EXP  =  !A8 & !P1 & 
+	!$OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6
+
+MACROCELL | 2 | 9 | C7_OBUF10_
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 3 | 1 | 3 | 0 | 3 | 2
+INPUTS | 8 | P5  | P4  | A2  | P3  | A5  | $OpTx$FX_DC$30  | EXP30_.EXP  | EXP31_.EXP
+INPUTMC | 3 | 2 | 4 | 2 | 8 | 2 | 10
+INPUTP | 5 | 10 | 65 | 63 | 90 | 3
+IMPORTS | 2 | 2 | 8 | 2 | 10
+EQ | 20 | 
+   C7_OBUF10_ = P5
+	$ P4 & A2 & P3 & A5 & !$OpTx$FX_DC$30
+	# P4 & A2 & P3 & !A5 & $OpTx$FX_DC$30
+	# P4 & A2 & !P3 & A5 & $OpTx$FX_DC$30
+	# P4 & A2 & !P3 & !A5 & !$OpTx$FX_DC$30
+;Imported pterms FB3_9
+	# P4 & !A2 & P6 & !A9 & $OpTx$FX_DC$30
+	# P4 & !A2 & !P6 & A9 & $OpTx$FX_DC$30
+	# P4 & !A2 & P3 & !A5 & !$OpTx$FX_DC$30
+	# P4 & !A2 & !P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & A2 & P6 & !A9 & $OpTx$FX_DC$30
+;Imported pterms FB3_8
+	# !P4 & !A2 & !P3 & A5 & $OpTx$FX_DC$30
+	# !P4 & !A2 & !P3 & !A5 & !$OpTx$FX_DC$30
+;Imported pterms FB3_11
+	# !P4 & A2 & !P6 & A9 & $OpTx$FX_DC$30
+	# !P4 & A2 & P3 & !A5 & !$OpTx$FX_DC$30
+	# !P4 & A2 & !P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & !A2 & P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & !A2 & P3 & !A5 & $OpTx$FX_DC$30;
+
+MACROCELL | 2 | 4 | $OpTx$FX_DC$30
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 8 | 2 | 1 | 2 | 9 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 7 | 2 | 8 | 2 | 10
+INPUTS | 3 | A7  | P7  | P6
+INPUTP | 3 | 13 | 7 | 92
+EXPORTS | 1 | 2 | 3
+EQ | 3 | 
+   !$OpTx$FX_DC$30 = A7
+	$ P7;
+    $OpTx$FX_DC$30.EXP  =  P6
+
+MACROCELL | 0 | 7 | $OpTx$FX_DC$61
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 0 | 14
+INPUTS | 5 | A0  | A1  | A9  | C7  | $OpTx$FX_DC$59.EXP
+INPUTMC | 2 | 2 | 1 | 0 | 8
+INPUTP | 3 | 52 | 59 | 24
+IMPORTS | 1 | 0 | 8
+EQ | 7 | 
+   $OpTx$FX_DC$61 = A0 & A1 & A9 & !C7
+	# A0 & A1 & !A9 & C7
+	# A0 & !A1 & A9 & C7
+	# !A0 & !A1 & A9 & !C7
+	# !A0 & !A1 & !A9 & C7
+;Imported pterms FB1_9
+	# A0 & !A1 & !A9 & !C7;
+
+MACROCELL | 0 | 8 | $OpTx$FX_DC$59
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 0 | 14 | 0 | 13 | 0 | 7
+INPUTS | 5 | A0  | A1  | A9  | C7  | EXP10_.EXP
+INPUTMC | 2 | 2 | 1 | 0 | 9
+INPUTP | 3 | 52 | 59 | 24
+EXPORTS | 1 | 0 | 7
+IMPORTS | 1 | 0 | 9
+EQ | 8 | 
+   $OpTx$FX_DC$59 = A0 & !A1 & !A9 & C7
+	# !A0 & A1 & A9 & !C7
+	# !A0 & A1 & !A9 & C7
+	# !A0 & !A1 & A9 & C7
+;Imported pterms FB1_10
+	# A0 & !A1 & A9 & !C7
+	# !A0 & !A1 & !A9 & !C7;
+    $OpTx$FX_DC$59.EXP  =  A0 & !A1 & !A9 & !C7
+
+MACROCELL | 0 | 1 | $OpTx$FX_DC$60
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 0 | 15
+INPUTS | 5 | A0  | A1  | A9  | C7  | $OpTx$FX_DC$28.EXP
+INPUTMC | 2 | 2 | 1 | 0 | 0
+INPUTP | 3 | 52 | 59 | 24
+IMPORTS | 1 | 0 | 0
+EQ | 7 | 
+   $OpTx$FX_DC$60 = A0 & A1 & A9 & !C7
+	# A0 & A1 & !A9 & C7
+	# !A0 & A1 & A9 & C7
+	# !A0 & A1 & !A9 & !C7
+	# !A0 & !A1 & !A9 & C7
+;Imported pterms FB1_1
+	# !A0 & !A1 & A9 & !C7;
+
+MACROCELL | 0 | 11 | $OpTx$FX_DC$62
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 0 | 13
+INPUTS | 5 | A0  | A1  | A9  | C7  | EXP11_.EXP
+INPUTMC | 2 | 2 | 1 | 0 | 10
+INPUTP | 3 | 52 | 59 | 24
+IMPORTS | 1 | 0 | 10
+EQ | 7 | 
+   $OpTx$FX_DC$62 = A0 & A1 & A9 & C7
+	# A0 & A1 & !A9 & !C7
+	# A0 & !A1 & !A9 & C7
+	# !A0 & A1 & A9 & !C7
+	# !A0 & A1 & !A9 & C7
+;Imported pterms FB1_11
+	# A0 & !A1 & A9 & !C7;
+
+MACROCELL | 2 | 7 | $OpTx$FX_DC$75
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 8 | 0 | 14 | 0 | 3 | 0 | 5 | 0 | 12 | 0 | 13 | 0 | 15 | 0 | 16 | 2 | 8
+INPUTS | 10 | P0  | P7  | $OpTx$FX_DC$24  | $OpTx$FX_DC$31  | P4  | A2  | P3  | A5  | $OpTx$FX_DC$30  | EXP29_.EXP
+INPUTMC | 4 | 2 | 5 | 2 | 3 | 2 | 4 | 2 | 6
+INPUTP | 6 | 89 | 7 | 65 | 63 | 90 | 3
+EXPORTS | 1 | 2 | 8
+IMPORTS | 1 | 2 | 6
+EQ | 15 | 
+   !$OpTx$FX_DC$75 = P0
+	$ P7 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# !P7 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+;Imported pterms FB3_7
+	# P4 & !P7 & !A3 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P4 & A8 & A3 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P4 & A8 & !A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P4 & !A8 & A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & !P7 & A3 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+;Imported pterms FB3_6
+	# !P4 & A8 & A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & A8 & !A3 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & !A8 & !A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31;
+    $OpTx$FX_DC$75.EXP  =  !P4 & !A2 & !P3 & A5 & $OpTx$FX_DC$30
+	# !P4 & !A2 & !P3 & !A5 & !$OpTx$FX_DC$30
+
+MACROCELL | 0 | 16 | $OpTx$FX_DC$66
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 4 | 0 | 14 | 0 | 12 | 0 | 13 | 0 | 15
+INPUTS | 10 | A0  | A8  | P1  | $OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6  | A1  | A9  | C4  | C7  | $OpTx$FX_DC$75  | $OpTx$FX_DC$25.EXP
+INPUTMC | 5 | 1 | 0 | 2 | 13 | 2 | 1 | 2 | 7 | 0 | 17
+INPUTP | 5 | 52 | 83 | 87 | 59 | 24
+EXPORTS | 1 | 0 | 15
+IMPORTS | 1 | 0 | 17
+EQ | 11 | 
+   !$OpTx$FX_DC$66 = A0
+	$ A8 & P1 & 
+	!$OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6
+	# A8 & !P1 & 
+	$OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6
+	# !A8 & P1 & 
+	$OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6
+;Imported pterms FB1_18
+	# !A8 & !P1 & 
+	!$OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6;
+    $OpTx$FX_DC$66.EXP  =  A1 & A9 & C4 & C7 & $OpTx$FX_DC$75
+
+MACROCELL | 1 | 0 | $OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 0 | 16 | 0 | 17 | 1 | 17
+INPUTS | 9 | P4  | P6  | A0  | A3  | P3  | A6  | P7  | A8  | EXP15_.EXP
+INPUTMC | 1 | 1 | 1
+INPUTP | 8 | 65 | 92 | 52 | 82 | 90 | 68 | 7 | 83
+EXPORTS | 1 | 1 | 17
+IMPORTS | 1 | 1 | 1
+EQ | 27 | 
+   $OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6 = !P4 & P6 & A0 & A3
+	# !P4 & !P6 & !A0 & A3
+;Imported pterms FB2_2
+	# P4 & P6 & A0 & !A3
+	# P4 & !P6 & !A0 & !A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_3
+	# P4 & P3 & !A6 & !P7 & A8 & !A3
+	# P4 & !P3 & A6 & !P7 & A8 & !A3
+	# !P4 & P3 & !A6 & !P7 & A8 & A3
+	# !P4 & !P3 & A6 & !P7 & A8 & A3
+	# P6 & !A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_4
+	# P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P4 & !P3 & A6 & P7 & !A8 & !A3
+	# !P4 & P3 & !A6 & P7 & !A8 & A3
+	# !P4 & !P3 & A6 & P7 & !A8 & A3
+	# !P6 & A0 & P3 & A6 & !P7 & !A8
+;Imported pterms FB2_5
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+	# !P6 & A0 & !P3 & !A6 & !P7 & !A8;
+    $OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6.EXP  =  P4 & P6 & A0 & !A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# P6 & !A0 & !P3 & !A6 & P7 & A8
+
+MACROCELL | 1 | 16 | C3_OBUF/C3_OBUF_D13_
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 0 | 14 | 0 | 13 | 0 | 15
+INPUTS | 11 | P1  | P4  | P6  | A0  | A3  | P3  | A6  | P7  | A8  | EXP26_.EXP  | EXP27_.EXP
+INPUTMC | 2 | 1 | 15 | 1 | 17
+INPUTP | 9 | 87 | 65 | 92 | 52 | 82 | 90 | 68 | 7 | 83
+IMPORTS | 2 | 1 | 15 | 1 | 17
+EQ | 25 | 
+   !C3_OBUF/C3_OBUF_D13_ = P1
+	$ P4 & !P6 & !A0 & !A3
+	# !P4 & !P6 & !A0 & A3
+	# !P6 & A0 & P3 & A6 & !P7 & !A8
+	# !P6 & A0 & !P3 & !A6 & !P7 & !A8
+;Imported pterms FB2_16
+	# P4 & P3 & !A6 & !P7 & A8 & !A3
+	# P4 & !P3 & A6 & !P7 & A8 & !A3
+	# !P4 & P3 & !A6 & !P7 & A8 & A3
+	# !P4 & !P3 & A6 & P7 & !A8 & A3
+	# !P4 & !P3 & A6 & !P7 & A8 & A3
+;Imported pterms FB2_15
+	# !P4 & P6 & A0 & A3
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+;Imported pterms FB2_18
+	# P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P4 & !P3 & A6 & P7 & !A8 & !A3
+	# !P4 & P3 & !A6 & P7 & !A8 & A3
+	# !P6 & A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_1
+	# P4 & P6 & A0 & !A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# P6 & !A0 & !P3 & !A6 & P7 & A8;
+
+MACROCELL | 0 | 0 | $OpTx$FX_DC$28
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 0 | 4 | 0 | 3 | 0 | 1
+INPUTS | 4 | A0  | A1  | A9  | C7
+INPUTMC | 1 | 2 | 1
+INPUTP | 3 | 52 | 59 | 24
+EXPORTS | 1 | 0 | 1
+EQ | 3 | 
+   !$OpTx$FX_DC$28 = A0
+	$ A1;
+    $OpTx$FX_DC$28.EXP  =  !A0 & !A1 & A9 & !C7
+
+MACROCELL | 0 | 2 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 6 | A0  | A1  | A9  | C3  | C4  | C7
+INPUTMC | 3 | 1 | 14 | 2 | 13 | 2 | 1
+INPUTP | 3 | 52 | 59 | 24
+EXPORTS | 1 | 0 | 3
+EQ | 5 | 
+       EXP6_.EXP  =  A0 & A1 & !A9 & !C3 & C4 & !C7
+	# A0 & !A1 & A9 & !C3 & !C4 & C7
+	# A0 & !A1 & !A9 & !C3 & !C4 & !C7
+	# !A0 & A1 & !A9 & C3 & C4 & !C7
+	# !A0 & !A1 & A9 & C3 & !C4 & C7
+
+MACROCELL | 0 | 3 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 8 | A1  | A9  | C4  | C7  | $OpTx$FX_DC$75  | C3  | $OpTx$FX_DC$28  | EXP6_.EXP
+INPUTMC | 6 | 2 | 13 | 2 | 1 | 2 | 7 | 1 | 14 | 0 | 0 | 0 | 2
+INPUTP | 2 | 59 | 24
+EXPORTS | 1 | 0 | 4
+IMPORTS | 1 | 0 | 2
+EQ | 11 | 
+       EXP7_.EXP  =  A1 & A9 & !C4 & C7 & $OpTx$FX_DC$75
+	# A9 & C3 & !C4 & !C7 & !$OpTx$FX_DC$28
+	# A9 & !C3 & C4 & !C7 & !$OpTx$FX_DC$28
+	# !A9 & C3 & !C4 & C7 & !$OpTx$FX_DC$28
+	# !A9 & !C3 & C4 & C7 & !$OpTx$FX_DC$28
+;Imported pterms FB1_3
+	# A0 & A1 & !A9 & !C3 & C4 & !C7
+	# A0 & !A1 & A9 & !C3 & !C4 & C7
+	# A0 & !A1 & !A9 & !C3 & !C4 & !C7
+	# !A0 & A1 & !A9 & C3 & C4 & !C7
+	# !A0 & !A1 & A9 & C3 & !C4 & C7
+
+MACROCELL | 0 | 5 | EXP8_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 8 | A1  | A9  | C4  | C7  | $OpTx$FX_DC$75  | A0  | C3  | EXP9_.EXP
+INPUTMC | 5 | 2 | 13 | 2 | 1 | 2 | 7 | 1 | 14 | 0 | 6
+INPUTP | 3 | 59 | 24 | 52
+EXPORTS | 1 | 0 | 4
+IMPORTS | 1 | 0 | 6
+EQ | 7 | 
+       EXP8_.EXP  =  A1 & !A9 & !C4 & !C7 & $OpTx$FX_DC$75
+	# !A1 & A9 & C4 & C7 & $OpTx$FX_DC$75
+	# !A1 & !A9 & C4 & !C7 & $OpTx$FX_DC$75
+	# A0 & A1 & A9 & !C3 & C4 & C7
+	# !A0 & A1 & A9 & C3 & C4 & C7
+;Imported pterms FB1_7
+	# !A0 & !A1 & !A9 & C3 & !C4 & !C7
+
+MACROCELL | 0 | 6 | EXP9_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 5
+INPUTS | 6 | A0  | A1  | A9  | C3  | C4  | C7
+INPUTMC | 3 | 1 | 14 | 2 | 13 | 2 | 1
+INPUTP | 3 | 52 | 59 | 24
+EXPORTS | 1 | 0 | 5
+EQ | 1 | 
+       EXP9_.EXP  =  !A0 & !A1 & !A9 & C3 & !C4 & !C7
+
+MACROCELL | 0 | 9 | EXP10_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 8
+INPUTS | 4 | A0  | A1  | A9  | C7
+INPUTMC | 1 | 2 | 1
+INPUTP | 3 | 52 | 59 | 24
+EXPORTS | 1 | 0 | 8
+EQ | 2 | 
+       EXP10_.EXP  =  A0 & !A1 & A9 & !C7
+	# !A0 & !A1 & !A9 & !C7
+
+MACROCELL | 0 | 10 | EXP11_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 11
+INPUTS | 4 | A0  | A1  | A9  | C7
+INPUTMC | 1 | 2 | 1
+INPUTP | 3 | 52 | 59 | 24
+EXPORTS | 1 | 0 | 11
+EQ | 1 | 
+       EXP11_.EXP  =  A0 & !A1 & A9 & !C7
+
+MACROCELL | 0 | 12 | EXP12_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 13
+INPUTS | 7 | A1  | A9  | C4  | C7  | $OpTx$FX_DC$75  | C6  | $OpTx$FX_DC$66
+INPUTMC | 5 | 2 | 13 | 2 | 1 | 2 | 7 | 1 | 4 | 0 | 16
+INPUTP | 2 | 59 | 24
+EXPORTS | 1 | 0 | 13
+EQ | 5 | 
+       EXP12_.EXP  =  A1 & !A9 & C4 & !C7 & $OpTx$FX_DC$75
+	# !A1 & A9 & !C4 & C7 & $OpTx$FX_DC$75
+	# A9 & C6 & C7 & $OpTx$FX_DC$75 & !$OpTx$FX_DC$66
+	# A9 & !C6 & C7 & $OpTx$FX_DC$75 & $OpTx$FX_DC$66
+	# !A9 & C6 & !C7 & $OpTx$FX_DC$75 & !$OpTx$FX_DC$66
+
+MACROCELL | 0 | 13 | EXP13_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 14
+INPUTS | 11 | A0  | A1  | C4  | $OpTx$FX_DC$75  | C3_OBUF/C3_OBUF_D13_  | C3  | C6  | $OpTx$FX_DC$59  | $OpTx$FX_DC$66  | $OpTx$FX_DC$62  | EXP12_.EXP
+INPUTMC | 9 | 2 | 13 | 2 | 7 | 1 | 16 | 1 | 14 | 1 | 4 | 0 | 8 | 0 | 16 | 0 | 11 | 0 | 12
+INPUTP | 2 | 52 | 59
+EXPORTS | 1 | 0 | 14
+IMPORTS | 1 | 0 | 12
+EQ | 13 | 
+       EXP13_.EXP  =  A0 & A1 & !C4 & !$OpTx$FX_DC$75 & 
+	C3_OBUF/C3_OBUF_D13_
+	# !A0 & !A1 & C4 & !$OpTx$FX_DC$75 & 
+	!C3_OBUF/C3_OBUF_D13_
+	# C3 & !C4 & C6 & $OpTx$FX_DC$59 & !$OpTx$FX_DC$66
+	# !C3 & C4 & C6 & $OpTx$FX_DC$62 & !$OpTx$FX_DC$66
+	# !C3 & C4 & !C6 & $OpTx$FX_DC$62 & $OpTx$FX_DC$66
+;Imported pterms FB1_13
+	# A1 & !A9 & C4 & !C7 & $OpTx$FX_DC$75
+	# !A1 & A9 & !C4 & C7 & $OpTx$FX_DC$75
+	# A9 & C6 & C7 & $OpTx$FX_DC$75 & !$OpTx$FX_DC$66
+	# A9 & !C6 & C7 & $OpTx$FX_DC$75 & $OpTx$FX_DC$66
+	# !A9 & C6 & !C7 & $OpTx$FX_DC$75 & !$OpTx$FX_DC$66
+
+MACROCELL | 0 | 15 | EXP14_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 14
+INPUTS | 12 | A0  | A1  | C4  | $OpTx$FX_DC$75  | C3_OBUF/C3_OBUF_D13_  | A9  | C7  | C6  | $OpTx$FX_DC$66  | C3  | $OpTx$FX_DC$60  | $OpTx$FX_DC$66.EXP
+INPUTMC | 9 | 2 | 13 | 2 | 7 | 1 | 16 | 2 | 1 | 1 | 4 | 0 | 16 | 1 | 14 | 0 | 1 | 0 | 16
+INPUTP | 3 | 52 | 59 | 24
+EXPORTS | 1 | 0 | 14
+IMPORTS | 1 | 0 | 16
+EQ | 8 | 
+       EXP14_.EXP  =  A0 & !A1 & C4 & !$OpTx$FX_DC$75 & 
+	C3_OBUF/C3_OBUF_D13_
+	# !A1 & !A9 & !C4 & !C7 & $OpTx$FX_DC$75
+	# !A9 & !C6 & !C7 & $OpTx$FX_DC$75 & $OpTx$FX_DC$66
+	# C3 & C4 & C6 & $OpTx$FX_DC$60 & !$OpTx$FX_DC$66
+	# C3 & C4 & !C6 & $OpTx$FX_DC$60 & $OpTx$FX_DC$66
+;Imported pterms FB1_17
+	# A1 & A9 & C4 & C7 & $OpTx$FX_DC$75
+
+MACROCELL | 1 | 1 | EXP15_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 0
+INPUTS | 9 | P4  | P6  | A0  | A3  | P3  | A6  | P7  | A8  | EXP16_.EXP
+INPUTMC | 1 | 1 | 2
+INPUTP | 8 | 65 | 92 | 52 | 82 | 90 | 68 | 7 | 83
+EXPORTS | 1 | 1 | 0
+IMPORTS | 1 | 1 | 2
+EQ | 21 | 
+       EXP15_.EXP  =  P4 & P6 & A0 & !A3
+	# P4 & !P6 & !A0 & !A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_3
+	# P4 & P3 & !A6 & !P7 & A8 & !A3
+	# P4 & !P3 & A6 & !P7 & A8 & !A3
+	# !P4 & P3 & !A6 & !P7 & A8 & A3
+	# !P4 & !P3 & A6 & !P7 & A8 & A3
+	# P6 & !A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_4
+	# P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P4 & !P3 & A6 & P7 & !A8 & !A3
+	# !P4 & P3 & !A6 & P7 & !A8 & A3
+	# !P4 & !P3 & A6 & P7 & !A8 & A3
+	# !P6 & A0 & P3 & A6 & !P7 & !A8
+;Imported pterms FB2_5
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+	# !P6 & A0 & !P3 & !A6 & !P7 & !A8
+
+MACROCELL | 1 | 2 | EXP16_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 9 | P4  | P3  | A6  | P7  | A8  | A3  | P6  | A0  | EXP17_.EXP
+INPUTMC | 1 | 1 | 3
+INPUTP | 8 | 65 | 90 | 68 | 7 | 83 | 82 | 92 | 52
+EXPORTS | 1 | 1 | 1
+IMPORTS | 1 | 1 | 3
+EQ | 15 | 
+       EXP16_.EXP  =  P4 & P3 & !A6 & !P7 & A8 & !A3
+	# P4 & !P3 & A6 & !P7 & A8 & !A3
+	# !P4 & P3 & !A6 & !P7 & A8 & A3
+	# !P4 & !P3 & A6 & !P7 & A8 & A3
+	# P6 & !A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_4
+	# P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P4 & !P3 & A6 & P7 & !A8 & !A3
+	# !P4 & P3 & !A6 & P7 & !A8 & A3
+	# !P4 & !P3 & A6 & P7 & !A8 & A3
+	# !P6 & A0 & P3 & A6 & !P7 & !A8
+;Imported pterms FB2_5
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+	# !P6 & A0 & !P3 & !A6 & !P7 & !A8
+
+MACROCELL | 1 | 3 | EXP17_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 9 | P4  | P3  | A6  | P7  | A8  | A3  | P6  | A0  | C6_OBUF.EXP
+INPUTMC | 1 | 1 | 4
+INPUTP | 8 | 65 | 90 | 68 | 7 | 83 | 82 | 92 | 52
+EXPORTS | 1 | 1 | 2
+IMPORTS | 1 | 1 | 4
+EQ | 9 | 
+       EXP17_.EXP  =  P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P4 & !P3 & A6 & P7 & !A8 & !A3
+	# !P4 & P3 & !A6 & P7 & !A8 & A3
+	# !P4 & !P3 & A6 & P7 & !A8 & A3
+	# !P6 & A0 & P3 & A6 & !P7 & !A8
+;Imported pterms FB2_5
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+	# !P6 & A0 & !P3 & !A6 & !P7 & !A8
+
+MACROCELL | 1 | 5 | EXP18_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 8 | P4  | P3  | A6  | A3  | $OpTx$FX_DC$31  | P7  | A8  | EXP19_.EXP
+INPUTMC | 2 | 2 | 3 | 1 | 6
+INPUTP | 6 | 65 | 90 | 68 | 82 | 7 | 83
+EXPORTS | 1 | 1 | 4
+IMPORTS | 1 | 1 | 6
+EQ | 22 | 
+       EXP18_.EXP  =  !P4 & P3 & A6 & !A3 & !$OpTx$FX_DC$31
+	# P3 & A6 & P7 & A8 & $OpTx$FX_DC$31
+	# P3 & A6 & !P7 & !A8 & $OpTx$FX_DC$31
+	# P3 & !A6 & P7 & !A8 & $OpTx$FX_DC$31
+	# P3 & !A6 & !P7 & A8 & $OpTx$FX_DC$31
+;Imported pterms FB2_7
+	# P4 & !P3 & !A6 & A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & !A6 & !A3 & !$OpTx$FX_DC$31
+	# !P3 & A6 & P7 & !A8 & $OpTx$FX_DC$31
+	# !P3 & A6 & !P7 & A8 & $OpTx$FX_DC$31
+	# !P3 & !A6 & P7 & A8 & $OpTx$FX_DC$31
+;Imported pterms FB2_8
+	# !P3 & !A6 & !P7 & !A8 & $OpTx$FX_DC$31
+	# P4 & P3 & !A6 & P7 & A8 & !A3 & !$OpTx$FX_DC$31
+	# P4 & P3 & !A6 & !P7 & !A8 & !A3 & !$OpTx$FX_DC$31
+	# !P4 & P3 & !A6 & P7 & A8 & A3 & !$OpTx$FX_DC$31
+	# !P4 & P3 & !A6 & !P7 & !A8 & A3 & !$OpTx$FX_DC$31
+;Imported pterms FB2_9
+	# P4 & !P3 & A6 & P7 & A8 & !A3 & !$OpTx$FX_DC$31
+	# P4 & !P3 & A6 & !P7 & !A8 & !A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & P7 & A8 & A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & !P7 & !A8 & A3 & !$OpTx$FX_DC$31
+
+MACROCELL | 1 | 6 | EXP19_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 5
+INPUTS | 8 | P4  | P3  | A6  | A3  | $OpTx$FX_DC$31  | P7  | A8  | EXP20_.EXP
+INPUTMC | 2 | 2 | 3 | 1 | 7
+INPUTP | 6 | 65 | 90 | 68 | 82 | 7 | 83
+EXPORTS | 1 | 1 | 5
+IMPORTS | 1 | 1 | 7
+EQ | 16 | 
+       EXP19_.EXP  =  P4 & !P3 & !A6 & A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & !A6 & !A3 & !$OpTx$FX_DC$31
+	# !P3 & A6 & P7 & !A8 & $OpTx$FX_DC$31
+	# !P3 & A6 & !P7 & A8 & $OpTx$FX_DC$31
+	# !P3 & !A6 & P7 & A8 & $OpTx$FX_DC$31
+;Imported pterms FB2_8
+	# !P3 & !A6 & !P7 & !A8 & $OpTx$FX_DC$31
+	# P4 & P3 & !A6 & P7 & A8 & !A3 & !$OpTx$FX_DC$31
+	# P4 & P3 & !A6 & !P7 & !A8 & !A3 & !$OpTx$FX_DC$31
+	# !P4 & P3 & !A6 & P7 & A8 & A3 & !$OpTx$FX_DC$31
+	# !P4 & P3 & !A6 & !P7 & !A8 & A3 & !$OpTx$FX_DC$31
+;Imported pterms FB2_9
+	# P4 & !P3 & A6 & P7 & A8 & !A3 & !$OpTx$FX_DC$31
+	# P4 & !P3 & A6 & !P7 & !A8 & !A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & P7 & A8 & A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & !P7 & !A8 & A3 & !$OpTx$FX_DC$31
+
+MACROCELL | 1 | 7 | EXP20_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 6
+INPUTS | 8 | P3  | A6  | P7  | A8  | $OpTx$FX_DC$31  | P4  | A3  | EXP21_.EXP
+INPUTMC | 2 | 2 | 3 | 1 | 8
+INPUTP | 6 | 90 | 68 | 7 | 83 | 65 | 82
+EXPORTS | 1 | 1 | 6
+IMPORTS | 1 | 1 | 8
+EQ | 10 | 
+       EXP20_.EXP  =  !P3 & !A6 & !P7 & !A8 & $OpTx$FX_DC$31
+	# P4 & P3 & !A6 & P7 & A8 & !A3 & !$OpTx$FX_DC$31
+	# P4 & P3 & !A6 & !P7 & !A8 & !A3 & !$OpTx$FX_DC$31
+	# !P4 & P3 & !A6 & P7 & A8 & A3 & !$OpTx$FX_DC$31
+	# !P4 & P3 & !A6 & !P7 & !A8 & A3 & !$OpTx$FX_DC$31
+;Imported pterms FB2_9
+	# P4 & !P3 & A6 & P7 & A8 & !A3 & !$OpTx$FX_DC$31
+	# P4 & !P3 & A6 & !P7 & !A8 & !A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & P7 & A8 & A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & !P7 & !A8 & A3 & !$OpTx$FX_DC$31
+
+MACROCELL | 1 | 8 | EXP21_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 7
+INPUTS | 7 | P4  | P3  | A6  | P7  | A8  | A3  | $OpTx$FX_DC$31
+INPUTMC | 1 | 2 | 3
+INPUTP | 6 | 65 | 90 | 68 | 7 | 83 | 82
+EXPORTS | 1 | 1 | 7
+EQ | 4 | 
+       EXP21_.EXP  =  P4 & !P3 & A6 & P7 & A8 & !A3 & !$OpTx$FX_DC$31
+	# P4 & !P3 & A6 & !P7 & !A8 & !A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & P7 & A8 & A3 & !$OpTx$FX_DC$31
+	# !P4 & !P3 & A6 & !P7 & !A8 & A3 & !$OpTx$FX_DC$31
+
+MACROCELL | 1 | 10 | EXP22_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 11
+INPUTS | 8 | P4  | P6  | A0  | A3  | P3  | A6  | P7  | A8
+INPUTP | 8 | 65 | 92 | 52 | 82 | 90 | 68 | 7 | 83
+EXPORTS | 1 | 1 | 11
+EQ | 4 | 
+       EXP22_.EXP  =  P4 & P6 & A0 & !A3
+	# !P4 & P6 & A0 & A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# P6 & !A0 & !P3 & !A6 & P7 & A8
+
+MACROCELL | 1 | 11 | EXP23_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 12
+INPUTS | 9 | P4  | P3  | A6  | P7  | A8  | A3  | P6  | A0  | EXP22_.EXP
+INPUTMC | 1 | 1 | 10
+INPUTP | 8 | 65 | 90 | 68 | 7 | 83 | 82 | 92 | 52
+EXPORTS | 1 | 1 | 12
+IMPORTS | 1 | 1 | 10
+EQ | 10 | 
+       EXP23_.EXP  =  P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+	# !P6 & A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_11
+	# P4 & P6 & A0 & !A3
+	# !P4 & P6 & A0 & A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# P6 & !A0 & !P3 & !A6 & P7 & A8
+
+MACROCELL | 1 | 12 | EXP24_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 13
+INPUTS | 7 | P4  | P3  | A6  | P7  | A8  | A3  | EXP23_.EXP
+INPUTMC | 1 | 1 | 11
+INPUTP | 6 | 65 | 90 | 68 | 7 | 83 | 82
+EXPORTS | 1 | 1 | 13
+IMPORTS | 1 | 1 | 11
+EQ | 16 | 
+       EXP24_.EXP  =  P4 & P3 & !A6 & !P7 & A8 & !A3
+	# P4 & !P3 & A6 & P7 & !A8 & !A3
+	# P4 & !P3 & A6 & !P7 & A8 & !A3
+	# !P4 & P3 & !A6 & P7 & !A8 & A3
+	# !P4 & !P3 & A6 & P7 & !A8 & A3
+;Imported pterms FB2_12
+	# P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+	# !P6 & A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_11
+	# P4 & P6 & A0 & !A3
+	# !P4 & P6 & A0 & A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# P6 & !A0 & !P3 & !A6 & P7 & A8
+
+MACROCELL | 1 | 13 | EXP25_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 14
+INPUTS | 9 | P4  | P6  | A0  | A3  | P3  | A6  | P7  | A8  | EXP24_.EXP
+INPUTMC | 1 | 1 | 12
+INPUTP | 8 | 65 | 92 | 52 | 82 | 90 | 68 | 7 | 83
+EXPORTS | 1 | 1 | 14
+IMPORTS | 1 | 1 | 12
+EQ | 22 | 
+       EXP25_.EXP  =  P4 & !P6 & !A0 & !A3
+	# !P4 & P3 & !A6 & !P7 & A8 & A3
+	# !P4 & !P3 & A6 & !P7 & A8 & A3
+	# !P6 & A0 & P3 & A6 & !P7 & !A8
+	# !P6 & A0 & !P3 & !A6 & !P7 & !A8
+;Imported pterms FB2_13
+	# P4 & P3 & !A6 & !P7 & A8 & !A3
+	# P4 & !P3 & A6 & P7 & !A8 & !A3
+	# P4 & !P3 & A6 & !P7 & A8 & !A3
+	# !P4 & P3 & !A6 & P7 & !A8 & A3
+	# !P4 & !P3 & A6 & P7 & !A8 & A3
+;Imported pterms FB2_12
+	# P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+	# !P6 & A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_11
+	# P4 & P6 & A0 & !A3
+	# !P4 & P6 & A0 & A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# P6 & !A0 & !P3 & !A6 & P7 & A8
+
+MACROCELL | 1 | 15 | EXP26_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 16
+INPUTS | 7 | P4  | P3  | A6  | P7  | A8  | A3  | C3_OBUF.EXP
+INPUTMC | 1 | 1 | 14
+INPUTP | 6 | 65 | 90 | 68 | 7 | 83 | 82
+EXPORTS | 1 | 1 | 16
+IMPORTS | 1 | 1 | 14
+EQ | 9 | 
+       EXP26_.EXP  =  P4 & P3 & !A6 & !P7 & A8 & !A3
+	# P4 & !P3 & A6 & !P7 & A8 & !A3
+	# !P4 & P3 & !A6 & !P7 & A8 & A3
+	# !P4 & !P3 & A6 & P7 & !A8 & A3
+	# !P4 & !P3 & A6 & !P7 & A8 & A3
+;Imported pterms FB2_15
+	# !P4 & P6 & A0 & A3
+	# P6 & !A0 & P3 & A6 & !P7 & !A8
+	# P6 & !A0 & !P3 & !A6 & !P7 & !A8
+
+MACROCELL | 1 | 17 | EXP27_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 16
+INPUTS | 9 | P4  | P3  | A6  | P7  | A8  | A3  | P6  | A0  | $OpTx$XLXI_3/XLXI_8/XLXN_39/XLXI_3/XLXI_8/XLXN_39_D2_INV$6.EXP
+INPUTMC | 1 | 1 | 0
+INPUTP | 8 | 65 | 90 | 68 | 7 | 83 | 82 | 92 | 52
+EXPORTS | 1 | 1 | 16
+IMPORTS | 1 | 1 | 0
+EQ | 9 | 
+       EXP27_.EXP  =  P4 & P3 & !A6 & P7 & !A8 & !A3
+	# P4 & !P3 & A6 & P7 & !A8 & !A3
+	# !P4 & P3 & !A6 & P7 & !A8 & A3
+	# !P6 & A0 & P3 & A6 & P7 & A8
+	# !P6 & A0 & !P3 & !A6 & P7 & A8
+;Imported pterms FB2_1
+	# P4 & P6 & A0 & !A3
+	# P6 & !A0 & P3 & A6 & P7 & A8
+	# P6 & !A0 & !P3 & !A6 & P7 & A8
+
+MACROCELL | 2 | 2 | EXP28_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 8 | P4  | A2  | P3  | A5  | $OpTx$FX_DC$30  | P6  | A9  | $OpTx$FX_DC$31.EXP
+INPUTMC | 2 | 2 | 4 | 2 | 3
+INPUTP | 6 | 65 | 63 | 90 | 3 | 92 | 24
+EXPORTS | 1 | 2 | 1
+IMPORTS | 1 | 2 | 3
+EQ | 10 | 
+       EXP28_.EXP  =  P4 & !A2 & !P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & A2 & P6 & !A9 & $OpTx$FX_DC$30
+	# !P4 & A2 & !P6 & A9 & $OpTx$FX_DC$30
+	# !P4 & A2 & P3 & !A5 & !$OpTx$FX_DC$30
+	# !P4 & A2 & !P3 & A5 & !$OpTx$FX_DC$30
+;Imported pterms FB3_4
+	# !P4 & !A2 & P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & !A2 & P3 & !A5 & $OpTx$FX_DC$30
+	# !P4 & !A2 & !P3 & A5 & $OpTx$FX_DC$30
+	# !P4 & !A2 & !P3 & !A5 & !$OpTx$FX_DC$30
+
+MACROCELL | 2 | 6 | EXP29_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 7
+INPUTS | 7 | P4  | P7  | A3  | $OpTx$FX_DC$24  | $OpTx$FX_DC$31  | A8  | $OpTx$FX_DC$24.EXP
+INPUTMC | 3 | 2 | 5 | 2 | 3 | 2 | 5
+INPUTP | 4 | 65 | 7 | 82 | 83
+EXPORTS | 1 | 2 | 7
+IMPORTS | 1 | 2 | 5
+EQ | 9 | 
+       EXP29_.EXP  =  P4 & !P7 & !A3 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P4 & A8 & A3 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P4 & A8 & !A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P4 & !A8 & A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & !P7 & A3 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+;Imported pterms FB3_6
+	# !P4 & A8 & A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & A8 & !A3 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & !A8 & !A3 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+
+MACROCELL | 2 | 8 | EXP30_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 9
+INPUTS | 8 | P4  | A2  | P6  | A9  | $OpTx$FX_DC$30  | P3  | A5  | $OpTx$FX_DC$75.EXP
+INPUTMC | 2 | 2 | 4 | 2 | 7
+INPUTP | 6 | 65 | 63 | 92 | 24 | 90 | 3
+EXPORTS | 1 | 2 | 9
+IMPORTS | 1 | 2 | 7
+EQ | 8 | 
+       EXP30_.EXP  =  P4 & !A2 & P6 & !A9 & $OpTx$FX_DC$30
+	# P4 & !A2 & !P6 & A9 & $OpTx$FX_DC$30
+	# P4 & !A2 & P3 & !A5 & !$OpTx$FX_DC$30
+	# P4 & !A2 & !P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & A2 & P6 & !A9 & $OpTx$FX_DC$30
+;Imported pterms FB3_8
+	# !P4 & !A2 & !P3 & A5 & $OpTx$FX_DC$30
+	# !P4 & !A2 & !P3 & !A5 & !$OpTx$FX_DC$30
+
+MACROCELL | 2 | 10 | EXP31_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 9
+INPUTS | 7 | P4  | A2  | P6  | A9  | $OpTx$FX_DC$30  | P3  | A5
+INPUTMC | 1 | 2 | 4
+INPUTP | 6 | 65 | 63 | 92 | 24 | 90 | 3
+EXPORTS | 1 | 2 | 9
+EQ | 5 | 
+       EXP31_.EXP  =  !P4 & A2 & !P6 & A9 & $OpTx$FX_DC$30
+	# !P4 & A2 & P3 & !A5 & !$OpTx$FX_DC$30
+	# !P4 & A2 & !P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & !A2 & P3 & A5 & !$OpTx$FX_DC$30
+	# !P4 & !A2 & P3 & !A5 & $OpTx$FX_DC$30
+
+MACROCELL | 2 | 11 | EXP32_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 12
+INPUTS | 7 | P4  | A2  | P7  | A7  | $OpTx$FX_DC$32  | P3  | A5
+INPUTMC | 1 | 2 | 0
+INPUTP | 6 | 65 | 63 | 7 | 13 | 90 | 3
+EXPORTS | 1 | 2 | 12
+EQ | 5 | 
+       EXP32_.EXP  =  P4 & A2 & P7 & !A7 & $OpTx$FX_DC$32
+	# P4 & A2 & !P7 & A7 & $OpTx$FX_DC$32
+	# P4 & !A2 & P3 & A5 & $OpTx$FX_DC$32
+	# P4 & !A2 & !P3 & !A5 & $OpTx$FX_DC$32
+	# !P4 & A2 & P3 & A5 & $OpTx$FX_DC$32
+
+MACROCELL | 2 | 12 | EXP33_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 13
+INPUTS | 8 | P3  | A5  | $OpTx$FX_DC$32  | P4  | A2  | P7  | A7  | EXP32_.EXP
+INPUTMC | 2 | 2 | 0 | 2 | 11
+INPUTP | 6 | 90 | 3 | 65 | 63 | 7 | 13
+EXPORTS | 1 | 2 | 13
+IMPORTS | 1 | 2 | 11
+EQ | 11 | 
+       EXP33_.EXP  =  P3 & !A5 & !$OpTx$FX_DC$32
+	# !P3 & A5 & !$OpTx$FX_DC$32
+	# !P4 & A2 & !P3 & !A5 & $OpTx$FX_DC$32
+	# !P4 & !A2 & P7 & !A7 & $OpTx$FX_DC$32
+	# !P4 & !A2 & !P7 & A7 & $OpTx$FX_DC$32
+;Imported pterms FB3_12
+	# P4 & A2 & P7 & !A7 & $OpTx$FX_DC$32
+	# P4 & A2 & !P7 & A7 & $OpTx$FX_DC$32
+	# P4 & !A2 & P3 & A5 & $OpTx$FX_DC$32
+	# P4 & !A2 & !P3 & !A5 & $OpTx$FX_DC$32
+	# !P4 & A2 & P3 & A5 & $OpTx$FX_DC$32
+
+MACROCELL | 2 | 14 | EXP34_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 15
+INPUTS | 6 | P3  | P7  | A7  | A5  | P2  | $OpTx$FX_DC$32
+INPUTMC | 1 | 2 | 0
+INPUTP | 5 | 90 | 7 | 13 | 3 | 21
+EXPORTS | 1 | 2 | 15
+EQ | 4 | 
+       EXP34_.EXP  =  P3 & P7 & !A7 & A5 & P2 & !$OpTx$FX_DC$32
+	# P3 & !P7 & A7 & A5 & P2 & !$OpTx$FX_DC$32
+	# !P3 & P7 & !A7 & !A5 & P2 & !$OpTx$FX_DC$32
+	# !P3 & !P7 & A7 & !A5 & P2 & !$OpTx$FX_DC$32
+
+MACROCELL | 2 | 15 | EXP35_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 16
+INPUTS | 8 | P3  | A5  | P2  | $OpTx$FX_DC$32  | $OpTx$FX_DC$25  | P7  | A7  | EXP34_.EXP
+INPUTMC | 3 | 2 | 0 | 0 | 17 | 2 | 14
+INPUTP | 5 | 90 | 3 | 21 | 7 | 13
+EXPORTS | 1 | 2 | 16
+IMPORTS | 1 | 2 | 14
+EQ | 10 | 
+       EXP35_.EXP  =  P3 & !A5 & P2 & $OpTx$FX_DC$32 & $OpTx$FX_DC$25
+	# !P3 & A5 & P2 & $OpTx$FX_DC$32 & $OpTx$FX_DC$25
+	# !P3 & !A5 & P2 & !$OpTx$FX_DC$32 & $OpTx$FX_DC$25
+	# !P3 & !A5 & !P2 & $OpTx$FX_DC$32 & $OpTx$FX_DC$25
+	# P7 & A7 & P2 & $OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+;Imported pterms FB3_15
+	# P3 & P7 & !A7 & A5 & P2 & !$OpTx$FX_DC$32
+	# P3 & !P7 & A7 & A5 & P2 & !$OpTx$FX_DC$32
+	# !P3 & P7 & !A7 & !A5 & P2 & !$OpTx$FX_DC$32
+	# !P3 & !P7 & A7 & !A5 & P2 & !$OpTx$FX_DC$32
+
+MACROCELL | 2 | 17 | EXP36_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 16
+INPUTS | 5 | P7  | A7  | P2  | $OpTx$FX_DC$32  | $OpTx$FX_DC$25
+INPUTMC | 2 | 2 | 0 | 0 | 17
+INPUTP | 3 | 7 | 13 | 21
+EXPORTS | 1 | 2 | 16
+EQ | 5 | 
+       EXP36_.EXP  =  P7 & A7 & !P2 & !$OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+	# P7 & !A7 & !P2 & $OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+	# !P7 & A7 & !P2 & $OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+	# !P7 & !A7 & P2 & $OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+	# !P7 & !A7 & !P2 & !$OpTx$FX_DC$32 & !$OpTx$FX_DC$25
+
+MACROCELL | 3 | 0 | EXP37_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 1
+INPUTS | 5 | A2  | A5  | C3  | $OpTx$FX_DC$74  | C7_OBUF10_
+INPUTMC | 3 | 1 | 14 | 3 | 15 | 2 | 9
+INPUTP | 2 | 63 | 3
+EXPORTS | 1 | 3 | 1
+EQ | 5 | 
+       EXP37_.EXP  =  A2 & A5 & !C3 & $OpTx$FX_DC$74 & !C7_OBUF10_
+	# A2 & !A5 & C3 & $OpTx$FX_DC$74 & !C7_OBUF10_
+	# A2 & !A5 & !C3 & $OpTx$FX_DC$74 & C7_OBUF10_
+	# !A2 & A5 & C3 & $OpTx$FX_DC$74 & !C7_OBUF10_
+	# !A2 & !A5 & C3 & $OpTx$FX_DC$74 & C7_OBUF10_
+
+MACROCELL | 3 | 2 | EXP38_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 1
+INPUTS | 7 | A2  | A5  | C3  | $OpTx$FX_DC$74  | C7_OBUF10_  | C7  | $OpTx$FX_DC$70
+INPUTMC | 5 | 1 | 14 | 3 | 15 | 2 | 9 | 2 | 1 | 2 | 16
+INPUTP | 2 | 63 | 3
+EXPORTS | 1 | 3 | 1
+EQ | 9 | 
+       EXP38_.EXP  =  !A2 & !A5 & !C3 & $OpTx$FX_DC$74 & !C7_OBUF10_
+	# A2 & A5 & !C3 & C7 & !$OpTx$FX_DC$74 & 
+	$OpTx$FX_DC$70
+	# A2 & !A5 & !C3 & !C7 & !$OpTx$FX_DC$74 & 
+	$OpTx$FX_DC$70
+	# !A2 & A5 & C3 & C7 & !$OpTx$FX_DC$74 & 
+	$OpTx$FX_DC$70
+	# !A2 & !A5 & C3 & !C7 & !$OpTx$FX_DC$74 & 
+	$OpTx$FX_DC$70
+
+MACROCELL | 3 | 11 | EXP39_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 12
+INPUTS | 5 | A2  | A5  | C3  | C7  | $OpTx$FX_DC$74
+INPUTMC | 3 | 1 | 14 | 2 | 1 | 3 | 15
+INPUTP | 2 | 63 | 3
+EXPORTS | 1 | 3 | 12
+EQ | 1 | 
+       EXP39_.EXP  =  A2 & A5 & C3 & C7 & !$OpTx$FX_DC$74
+
+MACROCELL | 3 | 12 | EXP40_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 13
+INPUTS | 7 | A2  | A5  | C3  | C7  | $OpTx$FX_DC$70  | $OpTx$FX_DC$74  | EXP39_.EXP
+INPUTMC | 5 | 1 | 14 | 2 | 1 | 2 | 16 | 3 | 15 | 3 | 11
+INPUTP | 2 | 63 | 3
+EXPORTS | 1 | 3 | 13
+IMPORTS | 1 | 3 | 11
+EQ | 7 | 
+       EXP40_.EXP  =  A2 & A5 & !C3 & !C7 & $OpTx$FX_DC$70
+	# A2 & !A5 & C3 & !C7 & !$OpTx$FX_DC$74
+	# A2 & !A5 & !C3 & C7 & $OpTx$FX_DC$70
+	# !A2 & A5 & C3 & !C7 & $OpTx$FX_DC$70
+	# !A2 & !A5 & C3 & C7 & $OpTx$FX_DC$70
+;Imported pterms FB4_12
+	# A2 & A5 & C3 & C7 & !$OpTx$FX_DC$74
+
+MACROCELL | 3 | 14 | EXP41_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 15
+INPUTS | 8 | P4  | A3  | P0  | $OpTx$FX_DC$24  | $OpTx$FX_DC$31  | P7  | A8  | C1_OBUF.EXP
+INPUTMC | 3 | 2 | 5 | 2 | 3 | 3 | 13
+INPUTP | 5 | 65 | 82 | 89 | 7 | 83
+EXPORTS | 1 | 3 | 15
+IMPORTS | 1 | 3 | 13
+EQ | 7 | 
+       EXP41_.EXP  =  !P4 & !A3 & P0 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P4 & !A3 & !P0 & $OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P7 & A8 & P0 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# P7 & A8 & !P0 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# P7 & !A8 & P0 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+;Imported pterms FB4_14
+	# !P7 & !A8 & P0 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+
+MACROCELL | 3 | 16 | EXP42_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 15
+INPUTS | 6 | P7  | A8  | P0  | $OpTx$FX_DC$24  | $OpTx$FX_DC$31  | EXP43_.EXP
+INPUTMC | 3 | 2 | 5 | 2 | 3 | 3 | 17
+INPUTP | 3 | 7 | 83 | 89
+EXPORTS | 1 | 3 | 15
+IMPORTS | 1 | 3 | 17
+EQ | 15 | 
+       EXP42_.EXP  =  P7 & !A8 & P0 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# P7 & !A8 & !P0 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# !P7 & A8 & P0 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# !P7 & A8 & P0 & !$OpTx$FX_DC$24 & !$OpTx$FX_DC$31
+	# !P7 & A8 & !P0 & !$OpTx$FX_DC$24 & $OpTx$FX_DC$31
+;Imported pterms FB4_18
+	# !P7 & !A8 & !P0 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# P4 & P7 & A8 & !A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+	# P4 & !P7 & !A8 & !A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+	# !P4 & P7 & A8 & A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+	# !P4 & !P7 & !A8 & A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+
+MACROCELL | 3 | 17 | EXP43_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 7 | P7  | A8  | P0  | $OpTx$FX_DC$24  | $OpTx$FX_DC$31  | P4  | A3
+INPUTMC | 2 | 2 | 5 | 2 | 3
+INPUTP | 5 | 7 | 83 | 89 | 65 | 82
+EXPORTS | 1 | 3 | 16
+EQ | 9 | 
+       EXP43_.EXP  =  !P7 & !A8 & !P0 & $OpTx$FX_DC$24 & $OpTx$FX_DC$31
+	# P4 & P7 & A8 & !A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+	# P4 & !P7 & !A8 & !A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+	# !P4 & P7 & A8 & A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+	# !P4 & !P7 & !A8 & A3 & !P0 & !$OpTx$FX_DC$24 & 
+	!$OpTx$FX_DC$31
+
+PIN | P4 | 64 | 0 | N/A | 65 | 35 | 0 | 14 | 1 | 14 | 2 | 13 | 1 | 4 | 2 | 1 | 3 | 15 | 0 | 17 | 2 | 9 | 2 | 6 | 1 | 0 | 1 | 16 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 15 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 7 | 2 | 8 | 2 | 10 | 2 | 11 | 2 | 12 | 3 | 14 | 3 | 17
+PIN | A2 | 64 | 0 | N/A | 63 | 18 | 3 | 1 | 3 | 13 | 2 | 13 | 2 | 1 | 0 | 17 | 2 | 9 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 7 | 2 | 8 | 2 | 10 | 2 | 11 | 2 | 12 | 3 | 0 | 3 | 2 | 3 | 11 | 3 | 12
+PIN | P6 | 64 | 0 | N/A | 92 | 17 | 3 | 1 | 1 | 14 | 1 | 17 | 2 | 2 | 2 | 0 | 2 | 8 | 1 | 0 | 1 | 16 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 10 | 1 | 11 | 1 | 13 | 2 | 4 | 2 | 10
+PIN | A0 | 64 | 0 | N/A | 52 | 26 | 0 | 14 | 1 | 14 | 0 | 2 | 2 | 3 | 0 | 7 | 0 | 8 | 0 | 1 | 0 | 11 | 0 | 16 | 1 | 0 | 1 | 16 | 0 | 0 | 0 | 5 | 0 | 6 | 0 | 9 | 0 | 10 | 0 | 13 | 0 | 15 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 10 | 1 | 11 | 1 | 13 | 1 | 17
+PIN | P3 | 64 | 0 | N/A | 90 | 32 | 3 | 13 | 1 | 13 | 2 | 12 | 1 | 4 | 2 | 1 | 2 | 5 | 2 | 16 | 2 | 9 | 1 | 16 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 11 | 1 | 12 | 1 | 14 | 1 | 15 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 7 | 2 | 8 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15
+PIN | A6 | 64 | 0 | N/A | 68 | 18 | 1 | 13 | 1 | 4 | 2 | 5 | 1 | 16 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 11 | 1 | 12 | 1 | 14 | 1 | 15 | 1 | 17
+PIN | P7 | 64 | 0 | N/A | 7 | 31 | 1 | 13 | 2 | 13 | 0 | 4 | 1 | 3 | 3 | 14 | 2 | 15 | 2 | 4 | 2 | 7 | 1 | 16 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 11 | 1 | 12 | 1 | 14 | 1 | 15 | 1 | 17 | 2 | 6 | 2 | 11 | 2 | 12 | 2 | 14 | 2 | 17 | 3 | 13 | 3 | 16 | 3 | 17
+PIN | A8 | 64 | 0 | N/A | 83 | 25 | 1 | 13 | 1 | 3 | 3 | 14 | 2 | 6 | 0 | 16 | 0 | 17 | 1 | 16 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 11 | 1 | 12 | 1 | 14 | 1 | 15 | 1 | 17 | 2 | 5 | 3 | 13 | 3 | 16 | 3 | 17
+PIN | A1 | 64 | 0 | N/A | 59 | 16 | 0 | 14 | 0 | 3 | 0 | 7 | 0 | 8 | 0 | 1 | 0 | 11 | 0 | 0 | 0 | 2 | 0 | 5 | 0 | 6 | 0 | 9 | 0 | 10 | 0 | 12 | 0 | 13 | 0 | 15 | 0 | 16
+PIN | A7 | 64 | 0 | N/A | 13 | 8 | 2 | 13 | 3 | 15 | 2 | 15 | 2 | 4 | 2 | 11 | 2 | 12 | 2 | 14 | 2 | 17
+PIN | A5 | 64 | 0 | N/A | 3 | 19 | 3 | 1 | 3 | 13 | 2 | 12 | 2 | 1 | 2 | 16 | 2 | 9 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 7 | 2 | 8 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15 | 3 | 0 | 3 | 2 | 3 | 11 | 3 | 12
+PIN | A9 | 64 | 0 | N/A | 24 | 19 | 0 | 12 | 0 | 4 | 0 | 16 | 2 | 0 | 2 | 8 | 0 | 7 | 0 | 8 | 0 | 1 | 0 | 11 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 9 | 0 | 10 | 0 | 15 | 2 | 2 | 2 | 10
+PIN | A3 | 64 | 0 | N/A | 82 | 22 | 1 | 14 | 1 | 4 | 3 | 15 | 2 | 6 | 1 | 0 | 1 | 16 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 15 | 1 | 17 | 2 | 5 | 3 | 14 | 3 | 17
+PIN | A4 | 64 | 0 | N/A | 20 | 1 | 2 | 16
+PIN | P1 | 64 | 0 | N/A | 87 | 4 | 1 | 14 | 0 | 16 | 1 | 16 | 0 | 17
+PIN | P2 | 64 | 0 | N/A | 21 | 5 | 2 | 13 | 2 | 16 | 2 | 14 | 2 | 15 | 2 | 17
+PIN | P0 | 64 | 0 | N/A | 89 | 7 | 1 | 4 | 3 | 15 | 2 | 7 | 3 | 13 | 3 | 14 | 3 | 16 | 3 | 17
+PIN | P5 | 64 | 0 | N/A | 10 | 2 | 2 | 1 | 2 | 9
+PIN | C0 | 536871040 | 0 | N/A | 62
+PIN | C1 | 536871040 | 0 | N/A | 72
+PIN | C2 | 536871040 | 0 | N/A | 26
+PIN | C3 | 536871040 | 0 | N/A | 9
+PIN | C4 | 536871040 | 0 | N/A | 49
+PIN | C5 | 536871040 | 0 | N/A | 12
+PIN | C6 | 536871040 | 0 | N/A | 88
+PIN | C7 | 536871040 | 0 | N/A | 29

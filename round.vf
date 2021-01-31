@@ -7,59 +7,17 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : round.vf
-// /___/   /\     Timestamp : 01/31/2021 12:31:26
+// /___/   /\     Timestamp : 01/31/2021 13:32:26
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject/round.vf -w P:/Xilinx/Project/DlProject/round.sch
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/Users/Ali/Documents/Xilinx/CryptographyProject/round.vf -w C:/Users/Ali/Documents/Xilinx/CryptographyProject/round.sch
 //Design Name: round
 //Device: xc9500xl
 //Purpose:
 //    This verilog netlist is translated from an ECS schematic.It can be 
 //    synthesized and simulated, but it should not be modified. 
 //
-`timescale 1ns / 1ps
-
-module Xor4Bit_MUSER_round(A0, 
-                           A1, 
-                           A2, 
-                           A3, 
-                           B0, 
-                           B1, 
-                           B2, 
-                           B3, 
-                           O0, 
-                           O1, 
-                           O2, 
-                           O3);
-
-    input A0;
-    input A1;
-    input A2;
-    input A3;
-    input B0;
-    input B1;
-    input B2;
-    input B3;
-   output O0;
-   output O1;
-   output O2;
-   output O3;
-   
-   
-   XOR2  XLXI_1 (.I0(B0), 
-                .I1(A0), 
-                .O(O0));
-   XOR2  XLXI_2 (.I0(B1), 
-                .I1(A1), 
-                .O(O1));
-   XOR2  XLXI_3 (.I0(B2), 
-                .I1(A2), 
-                .O(O2));
-   XOR2  XLXI_4 (.I0(B3), 
-                .I1(A3), 
-                .O(O3));
-endmodule
 `timescale 1ns / 1ps
 
 module P4_MUSER_round(B0, 
@@ -482,6 +440,48 @@ module F_Function_MUSER_round(A0,
 endmodule
 `timescale 1ns / 1ps
 
+module Xor4Bit_MUSER_round(A0, 
+                           A1, 
+                           A2, 
+                           A3, 
+                           B0, 
+                           B1, 
+                           B2, 
+                           B3, 
+                           O0, 
+                           O1, 
+                           O2, 
+                           O3);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+   
+   
+   XOR2  XLXI_1 (.I0(B0), 
+                .I1(A0), 
+                .O(O0));
+   XOR2  XLXI_2 (.I0(B1), 
+                .I1(A1), 
+                .O(O1));
+   XOR2  XLXI_3 (.I0(B2), 
+                .I1(A2), 
+                .O(O2));
+   XOR2  XLXI_4 (.I0(B3), 
+                .I1(A3), 
+                .O(O3));
+endmodule
+`timescale 1ns / 1ps
+
 module round(A0, 
              A1, 
              A2, 
@@ -537,22 +537,6 @@ module round(A0,
    wire XLXN_3;
    wire XLXN_4;
    
-   F_Function_MUSER_round  FFunction (.A0(A0), 
-                                     .A1(A1), 
-                                     .A2(A2), 
-                                     .A3(A3), 
-                                     .K0(K0), 
-                                     .K1(K1), 
-                                     .K2(K2), 
-                                     .K3(K3), 
-                                     .K4(K4), 
-                                     .K5(K5), 
-                                     .K6(K6), 
-                                     .K7(K7), 
-                                     .O0(XLXN_1), 
-                                     .O1(XLXN_2), 
-                                     .O2(XLXN_3), 
-                                     .O3(XLXN_4));
    BUF  XLXI_3 (.I(A0), 
                .O(O0));
    BUF  XLXI_4 (.I(A1), 
@@ -561,6 +545,22 @@ module round(A0,
                .O(O2));
    BUF  XLXI_6 (.I(A3), 
                .O(O3));
+   F_Function_MUSER_round  XLXI_8 (.A0(A0), 
+                                  .A1(A1), 
+                                  .A2(A2), 
+                                  .A3(A3), 
+                                  .K0(K0), 
+                                  .K1(K1), 
+                                  .K2(K2), 
+                                  .K3(K3), 
+                                  .K4(K4), 
+                                  .K5(K5), 
+                                  .K6(K6), 
+                                  .K7(K7), 
+                                  .O0(XLXN_1), 
+                                  .O1(XLXN_2), 
+                                  .O2(XLXN_3), 
+                                  .O3(XLXN_4));
    Xor4Bit_MUSER_round  XOR4 (.A0(I0), 
                              .A1(I1), 
                              .A2(I2), 

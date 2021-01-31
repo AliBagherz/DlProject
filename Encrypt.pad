@@ -1,0 +1,73 @@
+Release 8.1i - Fit P.20131013
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 1-31-2021  1:33PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  Encrypt.ngd
+output file: Encrypt.pad
+Part type:   xc9572xl
+Speed grade: -5
+Package:     pc44
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|{blank}|Slew Rate|Termination|{blank}|Voltage|Constraint|
+P1|TIE||I/O||||||||||
+P2|C5|O|I/O|OUTPUT|||||||||
+P3|A7|I|I/O|INPUT|||||||||
+P4|TIE||I/O||||||||||
+P5|A4|I|I/O/GCK1|INPUT|||||||||
+P6|P2|I|I/O/GCK2|INPUT|||||||||
+P7|A9|I|I/O/GCK3|INPUT|||||||||
+P8|C2|O|I/O|OUTPUT|||||||||
+P9|TIE||I/O||||||||||
+P10|GND||GND||||||||||
+P11|C7|O|I/O|OUTPUT|||||||||
+P12|TIE||I/O||||||||||
+P13|TIE||I/O||||||||||
+P14|TIE||I/O||||||||||
+P15|TDI||TDI||||||||||
+P16|TMS||TMS||||||||||
+P17|TCK||TCK||||||||||
+P18|TIE||I/O||||||||||
+P19|C4|O|I/O|OUTPUT|||||||||
+P20|TIE||I/O||||||||||
+P21|VCC||VCCINT||||||||||
+P22|A0|I|I/O|INPUT|||||||||
+P23|GND||GND||||||||||
+P24|A1|I|I/O|INPUT|||||||||
+P25|C0|O|I/O|OUTPUT|||||||||
+P26|A2|I|I/O|INPUT|||||||||
+P27|P4|I|I/O|INPUT|||||||||
+P28|A6|I|I/O|INPUT|||||||||
+P29|C1|O|I/O|OUTPUT|||||||||
+P30|TDO||TDO||||||||||
+P31|GND||GND||||||||||
+P32|VCC||VCCIO||||||||||
+P33|A3|I|I/O|INPUT|||||||||
+P34|A8|I|I/O|INPUT|||||||||
+P35|P1|I|I/O|INPUT|||||||||
+P36|C6|O|I/O|OUTPUT|||||||||
+P37|P0|I|I/O|INPUT|||||||||
+P38|P3|I|I/O|INPUT|||||||||
+P39|P6|I|I/O/GSR|INPUT|||||||||
+P40|A5|I|I/O/GTS2|INPUT|||||||||
+P41|VCC||VCCINT||||||||||
+P42|P7|I|I/O/GTS1|INPUT|||||||||
+P43|C3|O|I/O|OUTPUT|||||||||
+P44|P5|I|I/O|INPUT|||||||||
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

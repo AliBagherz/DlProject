@@ -1,0 +1,444 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Encrypt.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Encrypt.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Encrypt"
+Output Format                      : NGC
+Target Device                      : XC9500XL CPLDs
+
+---- Source Options
+Top Module Name                    : Encrypt
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Xor8Bit.vf" in library work
+Compiling verilog file "S1.vf" in library work
+Module <Xor8Bit> compiled
+Compiling verilog file "S0.vf" in library work
+Module <S1> compiled
+Compiling verilog file "P4.vf" in library work
+Module <S0> compiled
+Compiling verilog file "EP.vf" in library work
+Module <P4> compiled
+Compiling verilog file "Xor4Bit.vf" in library work
+Module <EP> compiled
+Compiling verilog file "P8.vf" in library work
+Module <Xor4Bit> compiled
+Compiling verilog file "P10.vf" in library work
+Module <P8> compiled
+Compiling verilog file "LS2.vf" in library work
+Module <P10> compiled
+Compiling verilog file "LS1.vf" in library work
+Module <LS2> compiled
+Compiling verilog file "F_Function.vf" in library work
+Module <LS1> compiled
+Module <P4_MUSER_F_Function> compiled
+Module <S0_MUSER_F_Function> compiled
+Module <S1_MUSER_F_Function> compiled
+Module <Xor8Bit_MUSER_F_Function> compiled
+Module <EP_MUSER_F_Function> compiled
+Compiling verilog file "SW.vf" in library work
+Module <F_Function> compiled
+Compiling verilog file "round.vf" in library work
+Module <SW> compiled
+Module <P4_MUSER_round> compiled
+Module <S0_MUSER_round> compiled
+Module <S1_MUSER_round> compiled
+Module <Xor8Bit_MUSER_round> compiled
+Module <EP_MUSER_round> compiled
+Module <F_Function_MUSER_round> compiled
+Module <Xor4Bit_MUSER_round> compiled
+Compiling verilog file "Key.vf" in library work
+Module <round> compiled
+Module <LS2_MUSER_Key> compiled
+Module <P8_MUSER_Key> compiled
+Module <LS1_MUSER_Key> compiled
+Module <P10_MUSER_Key> compiled
+Compiling verilog file "IP1.vf" in library work
+Module <Key> compiled
+Compiling verilog file "IP.vf" in library work
+Module <IP1> compiled
+Compiling verilog file "Encrypt.vf" in library work
+Module <IP> compiled
+Module <IP1_MUSER_Encrypt> compiled
+Module <SW_MUSER_Encrypt> compiled
+Module <P4_MUSER_Encrypt> compiled
+Module <S0_MUSER_Encrypt> compiled
+Module <S1_MUSER_Encrypt> compiled
+Module <Xor8Bit_MUSER_Encrypt> compiled
+Module <EP_MUSER_Encrypt> compiled
+Module <F_Function_MUSER_Encrypt> compiled
+Module <Xor4Bit_MUSER_Encrypt> compiled
+Module <round_MUSER_Encrypt> compiled
+Module <IP_MUSER_Encrypt> compiled
+Module <LS2_MUSER_Encrypt> compiled
+Module <P8_MUSER_Encrypt> compiled
+Module <LS1_MUSER_Encrypt> compiled
+Module <P10_MUSER_Encrypt> compiled
+Module <Key_MUSER_Encrypt> compiled
+Module <Encrypt> compiled
+No errors in compilation
+Analysis of file <"Encrypt.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Encrypt> in library <work>.
+
+Analyzing hierarchy for module <IP_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <IP1_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <Key_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <round_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <SW_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <LS1_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <LS2_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <P8_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <P10_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <F_Function_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <Xor4Bit_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <EP_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <P4_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <S0_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <S1_MUSER_Encrypt> in library <work>.
+
+Analyzing hierarchy for module <Xor8Bit_MUSER_Encrypt> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Encrypt>.
+Module <Encrypt> is correct for synthesis.
+ 
+Analyzing module <IP_MUSER_Encrypt> in library <work>.
+Module <IP_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <IP1_MUSER_Encrypt> in library <work>.
+Module <IP1_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <Key_MUSER_Encrypt> in library <work>.
+Module <Key_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <LS1_MUSER_Encrypt> in library <work>.
+Module <LS1_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <LS2_MUSER_Encrypt> in library <work>.
+Module <LS2_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <P8_MUSER_Encrypt> in library <work>.
+Module <P8_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <P10_MUSER_Encrypt> in library <work>.
+Module <P10_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <round_MUSER_Encrypt> in library <work>.
+Module <round_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <F_Function_MUSER_Encrypt> in library <work>.
+Module <F_Function_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <EP_MUSER_Encrypt> in library <work>.
+Module <EP_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <P4_MUSER_Encrypt> in library <work>.
+Module <P4_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <S0_MUSER_Encrypt> in library <work>.
+Module <S0_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <S1_MUSER_Encrypt> in library <work>.
+Module <S1_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <Xor8Bit_MUSER_Encrypt> in library <work>.
+Module <Xor8Bit_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <Xor4Bit_MUSER_Encrypt> in library <work>.
+Module <Xor4Bit_MUSER_Encrypt> is correct for synthesis.
+ 
+Analyzing module <SW_MUSER_Encrypt> in library <work>.
+Module <SW_MUSER_Encrypt> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <IP_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <IP_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <IP1_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <IP1_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <SW_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <SW_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <LS1_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <LS1_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <LS2_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <LS2_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <P8_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <P8_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <P10_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <P10_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <Xor4Bit_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <Xor4Bit_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <EP_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <EP_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <P4_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <P4_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <S0_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <S0_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <S1_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <S1_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <Xor8Bit_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <Xor8Bit_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <Key_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <Key_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <F_Function_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <F_Function_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <round_MUSER_Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <round_MUSER_Encrypt> synthesized.
+
+
+Synthesizing Unit <Encrypt>.
+    Related source file is "Encrypt.vf".
+Unit <Encrypt> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Encrypt> ...
+
+Optimizing unit <IP_MUSER_Encrypt> ...
+
+Optimizing unit <IP1_MUSER_Encrypt> ...
+
+Optimizing unit <SW_MUSER_Encrypt> ...
+
+Optimizing unit <LS1_MUSER_Encrypt> ...
+
+Optimizing unit <LS2_MUSER_Encrypt> ...
+
+Optimizing unit <P8_MUSER_Encrypt> ...
+
+Optimizing unit <P10_MUSER_Encrypt> ...
+
+Optimizing unit <Xor4Bit_MUSER_Encrypt> ...
+
+Optimizing unit <EP_MUSER_Encrypt> ...
+
+Optimizing unit <P4_MUSER_Encrypt> ...
+
+Optimizing unit <S0_MUSER_Encrypt> ...
+
+Optimizing unit <S1_MUSER_Encrypt> ...
+
+Optimizing unit <Xor8Bit_MUSER_Encrypt> ...
+
+Optimizing unit <Key_MUSER_Encrypt> ...
+
+Optimizing unit <F_Function_MUSER_Encrypt> ...
+
+Optimizing unit <round_MUSER_Encrypt> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Encrypt.ngr
+Top Level Output File Name         : Encrypt
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : XC9500XL CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 26
+
+Cell Usage :
+# BELS                             : 152
+#      AND3                        : 6
+#      BUF                         : 114
+#      OR4                         : 6
+#      OR5                         : 2
+#      XOR2                        : 24
+# IO Buffers                       : 26
+#      IBUF                        : 18
+#      OBUF                        : 8
+# Others                           : 28
+#      AND2B1                      : 2
+#      AND2B2                      : 2
+#      AND3B1                      : 8
+#      AND3B2                      : 16
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.60 secs
+ 
+--> 
+
+Total memory usage is 4498096 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

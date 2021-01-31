@@ -2,14 +2,14 @@ Command line:
    Key_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  3442
+     -socket  6316
 
-Sun Jan 31 10:15:41 2021
+Sun Jan 31 13:35:33 2021
 
 
  Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 5154.8 Meg
+ Current Memory Usage: 5154.93 Meg
 
  Total Signals          : 265
  Total Nets             : 73
@@ -20,9 +20,9 @@ Sun Jan 31 10:15:41 2021
  Total Traceable Variables  : 18
  Total Scalar Nets and Variables : 153
 
- Total Simulation Time: 0.203125 sec
+ Total Simulation Time: 0.078125 sec
 
- Current Memory Usage: 4997.52 Meg
+ Current Memory Usage: 5154.93 Meg
 
-Sun Jan 31 10:16:45 2021
+Sun Jan 31 13:35:37 2021
 

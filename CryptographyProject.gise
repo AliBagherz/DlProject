@@ -22,48 +22,129 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="CryptographyProject.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="EP.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="EP.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="EP_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Encrypt.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Encrypt.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Encrypt.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="Encrypt.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="Encrypt.jed"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="Encrypt.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Encrypt.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="Encrypt.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="Encrypt.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Encrypt.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Encrypt.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Encrypt.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Encrypt.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="Encrypt.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Encrypt.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Encrypt.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Encrypt.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Encrypt.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Encrypt.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="Encrypt.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Encrypt.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Encrypt.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Encrypt_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Encrypt_build.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="Encrypt_html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Encrypt_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Encrypt_isim_beh.wdb"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="F_Function.vf"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Encrypt_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Encrypt_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Encrypt_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Encrypt_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="F_Function.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="F_Function_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="IP.vf"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="IP1.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="IP.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="IP1.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="IP1_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="IP_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Key.vf"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Key_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Key.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Key_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Key_isim_beh.wdb"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="LS1.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="LS1.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LS1_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="LS2.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="LS2.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LS2_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="P10.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="P10.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="P10_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="P4.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="P4.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="P4_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="P8.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="P8.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="P8_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="S0.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="S0.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="S0_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="S1.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="S1.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="S1_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="SW.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="SW.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SW_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Xor4Bit.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Xor4Bit.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Xor4Bit_isim_beh.exe"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Xor8Bit.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Xor8Bit.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="round.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="round.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="round_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
@@ -75,7 +156,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1612083705" xil_pn:in_ck="-7183370409527455856" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7491193173184725147" xil_pn:start_ts="1612083703">
+    <transform xil_pn:end_ts="1612087653" xil_pn:in_ck="-7183370409527455856" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7491193173184725147" xil_pn:start_ts="1612087651">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="EP.vf"/>
@@ -96,7 +177,7 @@
       <outfile xil_pn:name="Xor8Bit.vf"/>
       <outfile xil_pn:name="round.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1612083705" xil_pn:in_ck="7217650665044383374" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1612083705">
+    <transform xil_pn:end_ts="1612087348" xil_pn:in_ck="7217650665044383374" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1612087348">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="EP.vf"/>
@@ -117,7 +198,7 @@
       <outfile xil_pn:name="Xor8Bit.vf"/>
       <outfile xil_pn:name="round.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1612083708" xil_pn:in_ck="7217650665044383374" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1206961665127228302" xil_pn:start_ts="1612083705">
+    <transform xil_pn:end_ts="1612087656" xil_pn:in_ck="7217650665044383374" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1206961665127228302" xil_pn:start_ts="1612087653">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Encrypt_beh.prj"/>
@@ -127,12 +208,91 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1612083708" xil_pn:in_ck="7621343277438978532" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7383899727615073231" xil_pn:start_ts="1612083708">
+    <transform xil_pn:end_ts="1612087656" xil_pn:in_ck="7621343277438978532" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7383899727615073231" xil_pn:start_ts="1612087656">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Encrypt_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1612087417" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1612087417">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1612087419" xil_pn:in_ck="-7183370409527455856" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6346285205728449499" xil_pn:start_ts="1612087417">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="EP.vf"/>
+      <outfile xil_pn:name="Encrypt.vf"/>
+      <outfile xil_pn:name="F_Function.vf"/>
+      <outfile xil_pn:name="IP.vf"/>
+      <outfile xil_pn:name="IP1.vf"/>
+      <outfile xil_pn:name="Key.vf"/>
+      <outfile xil_pn:name="LS1.vf"/>
+      <outfile xil_pn:name="LS2.vf"/>
+      <outfile xil_pn:name="P10.vf"/>
+      <outfile xil_pn:name="P4.vf"/>
+      <outfile xil_pn:name="P8.vf"/>
+      <outfile xil_pn:name="S0.vf"/>
+      <outfile xil_pn:name="S1.vf"/>
+      <outfile xil_pn:name="SW.vf"/>
+      <outfile xil_pn:name="Xor4Bit.vf"/>
+      <outfile xil_pn:name="Xor8Bit.vf"/>
+      <outfile xil_pn:name="round.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1612087425" xil_pn:in_ck="7217650665044383374" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="5978863068621771623" xil_pn:start_ts="1612087419">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Encrypt.jhd"/>
+      <outfile xil_pn:name="Encrypt.lso"/>
+      <outfile xil_pn:name="Encrypt.ngc"/>
+      <outfile xil_pn:name="Encrypt.ngr"/>
+      <outfile xil_pn:name="Encrypt.prj"/>
+      <outfile xil_pn:name="Encrypt.stx"/>
+      <outfile xil_pn:name="Encrypt.syr"/>
+      <outfile xil_pn:name="Encrypt.xst"/>
+      <outfile xil_pn:name="Encrypt_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1612087425" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981223482955047" xil_pn:start_ts="1612087425">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1612087429" xil_pn:in_ck="110928467013298539" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-8838379966481877026" xil_pn:start_ts="1612087425">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Encrypt.bld"/>
+      <outfile xil_pn:name="Encrypt.ngd"/>
+      <outfile xil_pn:name="Encrypt_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1612087442" xil_pn:in_ck="110928467013298540" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="7710991976528954357" xil_pn:start_ts="1612087429">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Encrypt.gyd"/>
+      <outfile xil_pn:name="Encrypt.mfd"/>
+      <outfile xil_pn:name="Encrypt.nga"/>
+      <outfile xil_pn:name="Encrypt.pad"/>
+      <outfile xil_pn:name="Encrypt.pnx"/>
+      <outfile xil_pn:name="Encrypt.rpt"/>
+      <outfile xil_pn:name="Encrypt.vm6"/>
+      <outfile xil_pn:name="Encrypt.xml"/>
+      <outfile xil_pn:name="Encrypt_build.xml"/>
+      <outfile xil_pn:name="Encrypt_html"/>
+      <outfile xil_pn:name="Encrypt_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1612087444" xil_pn:in_ck="110928467013307404" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1612087442">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Encrypt.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1612087442" xil_pn:in_ck="110928467013307404" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1612087440">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
   </transforms>
 

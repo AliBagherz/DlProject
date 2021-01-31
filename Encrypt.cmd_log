@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Encrypt.xst" -ofn "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Encrypt.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500xl Encrypt.ngc Encrypt.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Encrypt.ngd 
+XSLTProcess Encrypt_build.xml 
+tsim -intstyle ise Encrypt Encrypt.nga 
+taengine -intstyle ise -f Encrypt -w --format html1 -l Encrypt_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n Encrypt -i Encrypt 

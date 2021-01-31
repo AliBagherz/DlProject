@@ -59,7 +59,7 @@
         <port polarity="Output" name="O2" />
         <port polarity="Output" name="O3" />
         <blockdef name="F_Function">
-            <timestamp>2021-1-31T6:54:35</timestamp>
+            <timestamp>2021-1-31T9:16:33</timestamp>
             <rect width="256" x="64" y="-768" height="768" />
             <line x2="0" y1="-736" y2="-736" x1="64" />
             <line x2="0" y1="-672" y2="-672" x1="64" />
@@ -102,24 +102,6 @@
             <line x2="64" y1="-32" y2="-64" x1="128" />
             <line x2="128" y1="0" y2="-32" x1="64" />
         </blockdef>
-        <block symbolname="F_Function" name="FFunction">
-            <blockpin signalname="A0" name="A0" />
-            <blockpin signalname="A1" name="A1" />
-            <blockpin signalname="A2" name="A2" />
-            <blockpin signalname="A3" name="A3" />
-            <blockpin signalname="K0" name="K0" />
-            <blockpin signalname="K1" name="K1" />
-            <blockpin signalname="K2" name="K2" />
-            <blockpin signalname="K3" name="K3" />
-            <blockpin signalname="K4" name="K4" />
-            <blockpin signalname="K5" name="K5" />
-            <blockpin signalname="K6" name="K6" />
-            <blockpin signalname="K7" name="K7" />
-            <blockpin signalname="XLXN_1" name="O0" />
-            <blockpin signalname="XLXN_2" name="O1" />
-            <blockpin signalname="XLXN_3" name="O2" />
-            <blockpin signalname="XLXN_4" name="O3" />
-        </block>
         <block symbolname="Xor4Bit" name="XOR4">
             <blockpin signalname="I0" name="A0" />
             <blockpin signalname="I1" name="A1" />
@@ -150,10 +132,26 @@
             <blockpin signalname="A3" name="I" />
             <blockpin signalname="O3" name="O" />
         </block>
+        <block symbolname="F_Function" name="XLXI_8">
+            <blockpin signalname="A0" name="A0" />
+            <blockpin signalname="A1" name="A1" />
+            <blockpin signalname="A2" name="A2" />
+            <blockpin signalname="A3" name="A3" />
+            <blockpin signalname="K0" name="K0" />
+            <blockpin signalname="K1" name="K1" />
+            <blockpin signalname="K2" name="K2" />
+            <blockpin signalname="K3" name="K3" />
+            <blockpin signalname="K4" name="K4" />
+            <blockpin signalname="K5" name="K5" />
+            <blockpin signalname="K6" name="K6" />
+            <blockpin signalname="K7" name="K7" />
+            <blockpin signalname="XLXN_1" name="O0" />
+            <blockpin signalname="XLXN_2" name="O1" />
+            <blockpin signalname="XLXN_3" name="O2" />
+            <blockpin signalname="XLXN_4" name="O3" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="800" y="1296" name="FFunction" orien="R0">
-        </instance>
         <branch name="XLXN_1">
             <wire x2="1216" y1="560" y2="560" x1="1184" />
         </branch>
@@ -293,5 +291,7 @@
             <wire x2="672" y1="416" y2="416" x1="608" />
             <wire x2="672" y1="416" y2="624" x1="672" />
         </branch>
+        <instance x="800" y="1296" name="XLXI_8" orien="R0">
+        </instance>
     </sheet>
 </drawing>

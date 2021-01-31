@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="F_Function">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2021-1-31T6:54:33</timestamp>
+    <timestamp>2021-1-31T9:16:28</timestamp>
     <pin polarity="Input" x="0" y="-736" name="A0" />
     <pin polarity="Input" x="0" y="-672" name="A1" />
     <pin polarity="Input" x="0" y="-608" name="A2" />
