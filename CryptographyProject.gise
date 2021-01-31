@@ -208,6 +208,8 @@
     <transform xil_pn:end_ts="1612088408" xil_pn:in_ck="5771347331779148420" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-566846367074088518" xil_pn:start_ts="1612088405">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -221,6 +223,7 @@
     <transform xil_pn:end_ts="1612088408" xil_pn:in_ck="-7316812105156482246" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5346242480955029533" xil_pn:start_ts="1612088408">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -258,7 +261,7 @@
     </transform>
     <transform xil_pn:end_ts="1612087429" xil_pn:in_ck="110928467013298539" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-8838379966481877026" xil_pn:start_ts="1612087425">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -267,7 +270,7 @@
     </transform>
     <transform xil_pn:end_ts="1612087442" xil_pn:in_ck="110928467013298540" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="7710991976528954357" xil_pn:start_ts="1612087429">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -276,7 +279,7 @@
     </transform>
     <transform xil_pn:end_ts="1612087444" xil_pn:in_ck="110928467013307404" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1612087442">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -286,7 +289,7 @@
     <transform xil_pn:end_ts="1612087442" xil_pn:in_ck="110928467013307404" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1612087440">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputRemoved"/>

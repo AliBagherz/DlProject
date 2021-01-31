@@ -137,7 +137,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="round">
-            <timestamp>2021-1-31T9:52:34</timestamp>
+            <timestamp>2021-1-31T10:40:4</timestamp>
             <rect width="544" x="64" y="-608" height="544" />
             <line x2="112" y1="-608" y2="-672" x1="112" />
             <line x2="176" y1="-608" y2="-672" x1="176" />
@@ -155,14 +155,14 @@
             <line x2="432" y1="-64" y2="0" x1="432" />
             <line x2="496" y1="-64" y2="0" x1="496" />
             <line x2="560" y1="-64" y2="0" x1="560" />
-            <line x2="672" y1="-304" y2="-304" x1="608" />
-            <line x2="672" y1="-240" y2="-240" x1="608" />
             <line x2="672" y1="-560" y2="-560" x1="608" />
-            <line x2="672" y1="-176" y2="-176" x1="608" />
             <line x2="672" y1="-496" y2="-496" x1="608" />
-            <line x2="672" y1="-112" y2="-112" x1="608" />
             <line x2="672" y1="-432" y2="-432" x1="608" />
             <line x2="672" y1="-368" y2="-368" x1="608" />
+            <line x2="672" y1="-304" y2="-304" x1="608" />
+            <line x2="672" y1="-240" y2="-240" x1="608" />
+            <line x2="672" y1="-176" y2="-176" x1="608" />
+            <line x2="672" y1="-112" y2="-112" x1="608" />
         </blockdef>
         <blockdef name="SW">
             <timestamp>2021-1-31T5:49:11</timestamp>
@@ -252,7 +252,7 @@
             <blockpin signalname="XLXN_115" name="K2_6" />
             <blockpin signalname="XLXN_116" name="K2_7" />
         </block>
-        <block symbolname="IP" name="IP0">
+        <block symbolname="IP" name="IP">
             <blockpin signalname="P0" name="B0" />
             <blockpin signalname="P1" name="B1" />
             <blockpin signalname="P2" name="B2" />
@@ -270,15 +270,15 @@
             <blockpin signalname="XLXN_27" name="O6" />
             <blockpin signalname="XLXN_28" name="O7" />
         </block>
-        <block symbolname="round" name="XLXI_3">
-            <blockpin signalname="XLXN_151" name="I0" />
-            <blockpin signalname="XLXN_152" name="I1" />
-            <blockpin signalname="XLXN_153" name="I2" />
-            <blockpin signalname="XLXN_155" name="I3" />
-            <blockpin signalname="XLXN_25" name="A0" />
-            <blockpin signalname="XLXN_26" name="A1" />
-            <blockpin signalname="XLXN_27" name="A2" />
-            <blockpin signalname="XLXN_28" name="A3" />
+        <block symbolname="round" name="Round1">
+            <blockpin signalname="XLXN_151" name="A0" />
+            <blockpin signalname="XLXN_152" name="A1" />
+            <blockpin signalname="XLXN_153" name="A2" />
+            <blockpin signalname="XLXN_155" name="A3" />
+            <blockpin signalname="XLXN_25" name="A4" />
+            <blockpin signalname="XLXN_26" name="A5" />
+            <blockpin signalname="XLXN_27" name="A6" />
+            <blockpin signalname="XLXN_28" name="A7" />
             <blockpin signalname="XLXN_17" name="K0" />
             <blockpin signalname="XLXN_18" name="K1" />
             <blockpin signalname="XLXN_19" name="K2" />
@@ -287,24 +287,24 @@
             <blockpin signalname="XLXN_22" name="K5" />
             <blockpin signalname="XLXN_23" name="K6" />
             <blockpin signalname="XLXN_24" name="K7" />
-            <blockpin signalname="XLXN_129" name="O0" />
-            <blockpin signalname="XLXN_130" name="O1" />
-            <blockpin signalname="XLXN_166" name="XO0" />
-            <blockpin signalname="XLXN_131" name="O2" />
-            <blockpin signalname="XLXN_126" name="XO1" />
-            <blockpin signalname="XLXN_132" name="O3" />
-            <blockpin signalname="XLXN_127" name="XO2" />
-            <blockpin signalname="XLXN_128" name="XO3" />
+            <blockpin signalname="XLXN_166" name="O0" />
+            <blockpin signalname="XLXN_126" name="O1" />
+            <blockpin signalname="XLXN_127" name="O2" />
+            <blockpin signalname="XLXN_128" name="O3" />
+            <blockpin signalname="XLXN_129" name="O4" />
+            <blockpin signalname="XLXN_130" name="O5" />
+            <blockpin signalname="XLXN_131" name="O6" />
+            <blockpin signalname="XLXN_132" name="O7" />
         </block>
-        <block symbolname="round" name="XLXI_4">
-            <blockpin signalname="XLXN_246" name="I0" />
-            <blockpin signalname="XLXN_245" name="I1" />
-            <blockpin signalname="XLXN_244" name="I2" />
-            <blockpin signalname="XLXN_243" name="I3" />
-            <blockpin signalname="XLXN_239" name="A0" />
-            <blockpin signalname="XLXN_240" name="A1" />
-            <blockpin signalname="XLXN_241" name="A2" />
-            <blockpin signalname="XLXN_242" name="A3" />
+        <block symbolname="round" name="Round2">
+            <blockpin signalname="XLXN_246" name="A0" />
+            <blockpin signalname="XLXN_245" name="A1" />
+            <blockpin signalname="XLXN_244" name="A2" />
+            <blockpin signalname="XLXN_243" name="A3" />
+            <blockpin signalname="XLXN_239" name="A4" />
+            <blockpin signalname="XLXN_240" name="A5" />
+            <blockpin signalname="XLXN_241" name="A6" />
+            <blockpin signalname="XLXN_242" name="A7" />
             <blockpin signalname="XLXN_108" name="K0" />
             <blockpin signalname="XLXN_109" name="K1" />
             <blockpin signalname="XLXN_110" name="K2" />
@@ -313,16 +313,16 @@
             <blockpin signalname="XLXN_114" name="K5" />
             <blockpin signalname="XLXN_115" name="K6" />
             <blockpin signalname="XLXN_116" name="K7" />
-            <blockpin signalname="XLXN_13" name="O0" />
-            <blockpin signalname="XLXN_14" name="O1" />
-            <blockpin signalname="XLXN_9" name="XO0" />
-            <blockpin signalname="XLXN_15" name="O2" />
-            <blockpin signalname="XLXN_10" name="XO1" />
-            <blockpin signalname="XLXN_16" name="O3" />
-            <blockpin signalname="XLXN_11" name="XO2" />
-            <blockpin signalname="XLXN_12" name="XO3" />
+            <blockpin signalname="XLXN_9" name="O0" />
+            <blockpin signalname="XLXN_10" name="O1" />
+            <blockpin signalname="XLXN_11" name="O2" />
+            <blockpin signalname="XLXN_12" name="O3" />
+            <blockpin signalname="XLXN_13" name="O4" />
+            <blockpin signalname="XLXN_14" name="O5" />
+            <blockpin signalname="XLXN_15" name="O6" />
+            <blockpin signalname="XLXN_16" name="O7" />
         </block>
-        <block symbolname="SW" name="XLXI_5">
+        <block symbolname="SW" name="SW">
             <blockpin signalname="XLXN_166" name="B0" />
             <blockpin signalname="XLXN_126" name="B1" />
             <blockpin signalname="XLXN_127" name="B2" />
@@ -340,7 +340,7 @@
             <blockpin signalname="XLXN_241" name="O6" />
             <blockpin signalname="XLXN_242" name="O7" />
         </block>
-        <block symbolname="IP1" name="IP1_0">
+        <block symbolname="IP1" name="IP1">
             <blockpin signalname="XLXN_9" name="B0" />
             <blockpin signalname="XLXN_10" name="B1" />
             <blockpin signalname="XLXN_11" name="B2" />
@@ -490,7 +490,7 @@
             <wire x2="528" y1="880" y2="880" x1="496" />
         </branch>
         <iomarker fontsize="28" x="496" y="880" name="P7" orien="R180" />
-        <instance x="528" y="912" name="IP0" orien="R0">
+        <instance x="528" y="912" name="IP" orien="R0">
         </instance>
         <branch name="XLXN_127">
             <wire x2="1648" y1="816" y2="816" x1="1632" />
@@ -522,7 +522,8 @@
             <wire x2="1840" y1="768" y2="1136" x1="1840" />
             <wire x2="1856" y1="768" y2="768" x1="1840" />
         </branch>
-        <instance x="960" y="1248" name="XLXI_3" orien="R0">
+        <instance x="960" y="1248" name="Round1" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
         <branch name="XLXN_151">
             <wire x2="1072" y1="432" y2="432" x1="912" />
@@ -642,7 +643,7 @@
         <branch name="XLXN_9">
             <wire x2="3008" y1="688" y2="688" x1="2976" />
         </branch>
-        <instance x="3008" y="1168" name="IP1_0" orien="R0">
+        <instance x="3008" y="1168" name="IP1" orien="R0">
         </instance>
         <iomarker fontsize="28" x="3424" y="688" name="C0" orien="R0" />
         <iomarker fontsize="28" x="3424" y="752" name="C1" orien="R0" />
@@ -652,9 +653,10 @@
         <iomarker fontsize="28" x="3424" y="1008" name="C5" orien="R0" />
         <iomarker fontsize="28" x="3424" y="1072" name="C6" orien="R0" />
         <iomarker fontsize="28" x="3424" y="1136" name="C7" orien="R0" />
-        <instance x="2304" y="1248" name="XLXI_4" orien="R0">
+        <instance x="2304" y="1248" name="Round2" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
-        <instance x="1856" y="800" name="XLXI_5" orien="R0">
+        <instance x="1856" y="800" name="SW" orien="R0">
         </instance>
         <branch name="XLXN_166">
             <wire x2="1648" y1="688" y2="688" x1="1632" />
