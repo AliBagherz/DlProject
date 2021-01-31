@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\Ali\Documents\Xilinx\CryptographyProject\Xor4Bit_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Ali/Documents/Xilinx/CryptographyProject/Xor4Bit_isim_beh.wdb 
+Running: C:\Users\Ali\Documents\Xilinx\CryptographyProject\S0_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Ali/Documents/Xilinx/CryptographyProject/S0_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -8,12 +8,12 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# isim force add /Xor4Bit/A0 1 -radix bin
-# isim force add /Xor4Bit/A1 1 -radix bin
-# isim force add /Xor4Bit/A2 0 -radix bin
-# isim force add /Xor4Bit/A3 1 -radix bin
-# isim force add /Xor4Bit/B0 1 -radix bin
-# isim force add /Xor4Bit/B1 0 -radix bin
-# isim force add /Xor4Bit/B2 0 -radix bin
-# isim force add /Xor4Bit/B3 0 -radix bin
+# isim force add /S0/A0 0 -radix bin
+# isim force add /S0/A1 1 -radix bin
+# isim force add /S0/A2 1 -radix bin
+# isim force add /S0/A3 0 -radix bin
+# run all
+# isim force add /S0/A3 1 -radix bin
+# run all
+# isim force add /S0/A0 1 -radix bin
 # run all
