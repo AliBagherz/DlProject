@@ -18,7 +18,7 @@
         <signal name="O0" />
         <signal name="O2" />
         <signal name="O4" />
-        <signal name="o6" />
+        <signal name="O6" />
         <signal name="O1" />
         <signal name="O7" />
         <signal name="O5" />
@@ -34,7 +34,7 @@
         <port polarity="Output" name="O0" />
         <port polarity="Output" name="O2" />
         <port polarity="Output" name="O4" />
-        <port polarity="Output" name="o6" />
+        <port polarity="Output" name="O6" />
         <port polarity="Output" name="O1" />
         <port polarity="Output" name="O7" />
         <port polarity="Output" name="O5" />
@@ -64,7 +64,7 @@
         </block>
         <block symbolname="buf" name="XLXI_5">
             <blockpin signalname="B4" name="I" />
-            <blockpin signalname="o6" name="O" />
+            <blockpin signalname="O6" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_6">
             <blockpin signalname="B5" name="I" />
@@ -136,10 +136,10 @@
             <wire x2="752" y1="768" y2="768" x1="720" />
         </branch>
         <iomarker fontsize="28" x="752" y="768" name="O4" orien="R0" />
-        <branch name="o6">
+        <branch name="O6">
             <wire x2="752" y1="896" y2="896" x1="720" />
         </branch>
-        <iomarker fontsize="28" x="752" y="896" name="o6" orien="R0" />
+        <iomarker fontsize="28" x="752" y="896" name="O6" orien="R0" />
         <branch name="O1">
             <wire x2="752" y1="1024" y2="1024" x1="720" />
         </branch>
