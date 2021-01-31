@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : P10.vf
-// /___/   /\     Timestamp : 01/31/2021 01:07:21
+// /___/   /\     Timestamp : 01/31/2021 09:55:39
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/project/DlProject/P10.vf -w C:/project/DlProject/P10.sch
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject/P10.vf -w P:/Xilinx/Project/DlProject/P10.sch
 //Design Name: P10
 //Device: xc9500xl
 //Purpose:

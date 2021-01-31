@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : LS1.vf
-// /___/   /\     Timestamp : 01/31/2021 06:47:59
+// /___/   /\     Timestamp : 01/31/2021 09:55:39
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/Users/Ali/Documents/Xilinx/CryptographyProject/LS1.vf -w C:/Users/Ali/Documents/Xilinx/CryptographyProject/LS1.sch
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject/LS1.vf -w P:/Xilinx/Project/DlProject/LS1.sch
 //Design Name: LS1
 //Device: xc9500xl
 //Purpose:
