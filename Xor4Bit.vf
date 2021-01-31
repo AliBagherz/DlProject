@@ -1,0 +1,62 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Xor4Bit.vf
+// /___/   /\     Timestamp : 01/31/2021 07:02:56
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/Users/Ali/Documents/Xilinx/CryptographyProject/Xor4Bit.vf -w C:/Users/Ali/Documents/Xilinx/CryptographyProject/Xor4Bit.sch
+//Design Name: Xor4Bit
+//Device: xc9500xl
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Xor4Bit(A0, 
+               A1, 
+               A2, 
+               A3, 
+               B0, 
+               B1, 
+               B2, 
+               B3, 
+               O0, 
+               O1, 
+               O2, 
+               O3);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+   
+   
+   XOR2  XLXI_1 (.I0(B0), 
+                .I1(A0), 
+                .O(O0));
+   XOR2  XLXI_2 (.I0(B1), 
+                .I1(A1), 
+                .O(O1));
+   XOR2  XLXI_3 (.I0(B2), 
+                .I1(A2), 
+                .O(O2));
+   XOR2  XLXI_4 (.I0(B3), 
+                .I1(A3), 
+                .O(O3));
+endmodule

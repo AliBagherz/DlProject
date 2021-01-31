@@ -29,9 +29,9 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="IP1_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="IP_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="LS1.vf"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LS1_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LS1_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="LS1_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="LS2.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LS2_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="P10.vf"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="P10_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="P4.vf"/>
@@ -40,6 +40,10 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="P8_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="SW.vf"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SW_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Xor4Bit.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Xor4Bit_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Xor4Bit_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Xor4Bit_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -56,44 +60,48 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1612063080" xil_pn:in_ck="9166482178404383919" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4068459069052360112" xil_pn:start_ts="1612063079">
+    <transform xil_pn:end_ts="1612063977" xil_pn:in_ck="-2345976991206747868" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4734798126599762060" xil_pn:start_ts="1612063975">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="EP.vf"/>
       <outfile xil_pn:name="IP.vf"/>
       <outfile xil_pn:name="IP1.vf"/>
       <outfile xil_pn:name="LS1.vf"/>
+      <outfile xil_pn:name="LS2.vf"/>
       <outfile xil_pn:name="P10.vf"/>
       <outfile xil_pn:name="P4.vf"/>
       <outfile xil_pn:name="P8.vf"/>
       <outfile xil_pn:name="SW.vf"/>
+      <outfile xil_pn:name="Xor4Bit.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1612063080" xil_pn:in_ck="177064425430520767" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1612063080">
+    <transform xil_pn:end_ts="1612063977" xil_pn:in_ck="1834257846677269200" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1612063977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="EP.vf"/>
       <outfile xil_pn:name="IP.vf"/>
       <outfile xil_pn:name="IP1.vf"/>
       <outfile xil_pn:name="LS1.vf"/>
+      <outfile xil_pn:name="LS2.vf"/>
       <outfile xil_pn:name="P10.vf"/>
       <outfile xil_pn:name="P4.vf"/>
       <outfile xil_pn:name="P8.vf"/>
       <outfile xil_pn:name="SW.vf"/>
+      <outfile xil_pn:name="Xor4Bit.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1612063083" xil_pn:in_ck="177064425430520767" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8852872518222949540" xil_pn:start_ts="1612063080">
+    <transform xil_pn:end_ts="1612063979" xil_pn:in_ck="1834257846677269200" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3365587428603604828" xil_pn:start_ts="1612063977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="LS1_beh.prj"/>
-      <outfile xil_pn:name="LS1_isim_beh.exe"/>
+      <outfile xil_pn:name="Xor4Bit_beh.prj"/>
+      <outfile xil_pn:name="Xor4Bit_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1612063083" xil_pn:in_ck="-6405667179779371225" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7386183472201108313" xil_pn:start_ts="1612063083">
+    <transform xil_pn:end_ts="1612063979" xil_pn:in_ck="2600261649260612130" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2321137870004961375" xil_pn:start_ts="1612063979">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="LS1_isim_beh.wdb"/>
+      <outfile xil_pn:name="Xor4Bit_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
