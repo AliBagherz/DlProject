@@ -18,16 +18,16 @@
         <signal name="XLXN_26" />
         <signal name="XLXN_27" />
         <signal name="XLXN_28" />
-        <signal name="A0" />
-        <signal name="A1" />
-        <signal name="A2" />
-        <signal name="A3" />
-        <signal name="A4" />
-        <signal name="A5" />
-        <signal name="A6" />
-        <signal name="A7" />
-        <signal name="A8" />
-        <signal name="A9" />
+        <signal name="K0" />
+        <signal name="K1" />
+        <signal name="K2" />
+        <signal name="K3" />
+        <signal name="K4" />
+        <signal name="K5" />
+        <signal name="K6" />
+        <signal name="K7" />
+        <signal name="K8" />
+        <signal name="K9" />
         <signal name="P0" />
         <signal name="P1" />
         <signal name="P2" />
@@ -44,7 +44,6 @@
         <signal name="XLXN_114" />
         <signal name="XLXN_115" />
         <signal name="XLXN_116" />
-        <signal name="XLXN_125" />
         <signal name="XLXN_126" />
         <signal name="XLXN_127" />
         <signal name="XLXN_128" />
@@ -57,16 +56,6 @@
         <signal name="XLXN_153" />
         <signal name="XLXN_155" />
         <signal name="XLXN_166" />
-        <signal name="XLXN_196" />
-        <signal name="XLXN_197" />
-        <signal name="XLXN_198" />
-        <signal name="XLXN_199" />
-        <signal name="XLXN_200" />
-        <signal name="XLXN_201" />
-        <signal name="XLXN_202" />
-        <signal name="XLXN_203" />
-        <signal name="XLXN_205" />
-        <signal name="XLXN_207" />
         <signal name="C0" />
         <signal name="C1" />
         <signal name="C2" />
@@ -83,14 +72,6 @@
         <signal name="XLXN_11" />
         <signal name="XLXN_10" />
         <signal name="XLXN_9" />
-        <signal name="XLXN_229" />
-        <signal name="XLXN_230" />
-        <signal name="XLXN_231" />
-        <signal name="XLXN_232" />
-        <signal name="XLXN_233" />
-        <signal name="XLXN_234" />
-        <signal name="XLXN_235" />
-        <signal name="XLXN_236" />
         <signal name="XLXN_239" />
         <signal name="XLXN_240" />
         <signal name="XLXN_241" />
@@ -99,16 +80,16 @@
         <signal name="XLXN_244" />
         <signal name="XLXN_245" />
         <signal name="XLXN_246" />
-        <port polarity="Input" name="A0" />
-        <port polarity="Input" name="A1" />
-        <port polarity="Input" name="A2" />
-        <port polarity="Input" name="A3" />
-        <port polarity="Input" name="A4" />
-        <port polarity="Input" name="A5" />
-        <port polarity="Input" name="A6" />
-        <port polarity="Input" name="A7" />
-        <port polarity="Input" name="A8" />
-        <port polarity="Input" name="A9" />
+        <port polarity="Input" name="K0" />
+        <port polarity="Input" name="K1" />
+        <port polarity="Input" name="K2" />
+        <port polarity="Input" name="K3" />
+        <port polarity="Input" name="K4" />
+        <port polarity="Input" name="K5" />
+        <port polarity="Input" name="K6" />
+        <port polarity="Input" name="K7" />
+        <port polarity="Input" name="K8" />
+        <port polarity="Input" name="K9" />
         <port polarity="Input" name="P0" />
         <port polarity="Input" name="P1" />
         <port polarity="Input" name="P2" />
@@ -244,16 +225,16 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <block symbolname="Key" name="KEYGenerator">
-            <blockpin signalname="A0" name="A0" />
-            <blockpin signalname="A1" name="A1" />
-            <blockpin signalname="A2" name="A2" />
-            <blockpin signalname="A3" name="A3" />
-            <blockpin signalname="A4" name="A4" />
-            <blockpin signalname="A5" name="A5" />
-            <blockpin signalname="A6" name="A6" />
-            <blockpin signalname="A7" name="A7" />
-            <blockpin signalname="A8" name="A8" />
-            <blockpin signalname="A9" name="A9" />
+            <blockpin signalname="K0" name="A0" />
+            <blockpin signalname="K1" name="A1" />
+            <blockpin signalname="K2" name="A2" />
+            <blockpin signalname="K3" name="A3" />
+            <blockpin signalname="K4" name="A4" />
+            <blockpin signalname="K5" name="A5" />
+            <blockpin signalname="K6" name="A6" />
+            <blockpin signalname="K7" name="A7" />
+            <blockpin signalname="K8" name="A8" />
+            <blockpin signalname="K9" name="A9" />
             <blockpin signalname="XLXN_17" name="K1_0" />
             <blockpin signalname="XLXN_18" name="K1_1" />
             <blockpin signalname="XLXN_19" name="K1_2" />
@@ -437,46 +418,46 @@
             <wire x2="944" y1="880" y2="880" x1="912" />
             <wire x2="960" y1="880" y2="880" x1="944" />
         </branch>
-        <branch name="A0">
+        <branch name="K0">
             <wire x2="336" y1="1632" y2="1632" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="1632" name="A0" orien="R180" />
-        <branch name="A1">
+        <iomarker fontsize="28" x="304" y="1632" name="K0" orien="R180" />
+        <branch name="K1">
             <wire x2="336" y1="1696" y2="1696" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="1696" name="A1" orien="R180" />
-        <branch name="A2">
+        <iomarker fontsize="28" x="304" y="1696" name="K1" orien="R180" />
+        <branch name="K2">
             <wire x2="336" y1="1760" y2="1760" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="1760" name="A2" orien="R180" />
-        <branch name="A3">
+        <iomarker fontsize="28" x="304" y="1760" name="K2" orien="R180" />
+        <branch name="K3">
             <wire x2="336" y1="1824" y2="1824" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="1824" name="A3" orien="R180" />
-        <branch name="A4">
+        <iomarker fontsize="28" x="304" y="1824" name="K3" orien="R180" />
+        <branch name="K4">
             <wire x2="336" y1="1888" y2="1888" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="1888" name="A4" orien="R180" />
-        <branch name="A5">
+        <iomarker fontsize="28" x="304" y="1888" name="K4" orien="R180" />
+        <branch name="K5">
             <wire x2="336" y1="1952" y2="1952" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="1952" name="A5" orien="R180" />
-        <branch name="A6">
+        <iomarker fontsize="28" x="304" y="1952" name="K5" orien="R180" />
+        <branch name="K6">
             <wire x2="336" y1="2016" y2="2016" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="2016" name="A6" orien="R180" />
-        <branch name="A7">
+        <iomarker fontsize="28" x="304" y="2016" name="K6" orien="R180" />
+        <branch name="K7">
             <wire x2="336" y1="2080" y2="2080" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="2080" name="A7" orien="R180" />
-        <branch name="A8">
+        <iomarker fontsize="28" x="304" y="2080" name="K7" orien="R180" />
+        <branch name="K8">
             <wire x2="336" y1="2144" y2="2144" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="2144" name="A8" orien="R180" />
-        <branch name="A9">
+        <iomarker fontsize="28" x="304" y="2144" name="K8" orien="R180" />
+        <branch name="K9">
             <wire x2="336" y1="2208" y2="2208" x1="304" />
         </branch>
-        <iomarker fontsize="28" x="304" y="2208" name="A9" orien="R180" />
+        <iomarker fontsize="28" x="304" y="2208" name="K9" orien="R180" />
         <branch name="P0">
             <wire x2="528" y1="432" y2="432" x1="496" />
         </branch>

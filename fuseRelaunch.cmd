@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Encrypt_isim_beh.exe" -prj "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Encrypt_beh.prj" "work.Encrypt" "work.glbl" 
+-intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Decrypt_isim_beh.exe" -prj "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Decrypt_beh.prj" "work.Decrypt" "work.glbl" 

@@ -1,0 +1,28 @@
+Command line:
+   Decrypt_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  6524
+
+Sun Jan 31 13:50:09 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5155.54 Meg
+
+ Total Signals          : 1113
+ Total Nets             : 257
+ Total Signal Drivers   : 231
+ Total Blocks           : 209
+ Total Primitive Blocks : 181
+ Total Processes        : 232
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 337
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 4998.25 Meg
+
+Sun Jan 31 13:51:47 2021
+
