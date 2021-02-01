@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Encrypt (C:/Users/Ali/Documents/Xilinx/CryptographyProject/Encrypt.sch)</SelectedItem>
+         <SelectedItem>Encrypt (C:/project/DlProject/Encrypt.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000012d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000012d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Encrypt (C:/Users/Ali/Documents/Xilinx/CryptographyProject/Encrypt.sch)</CurrentItem>
+      <CurrentItem>Encrypt (C:/project/DlProject/Encrypt.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -75,10 +75,12 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Decrypt C:|Users|Ali|Documents|Xilinx|CryptographyProject|Decrypt.sch</ClosedNode>
+         <ClosedNode>/Decrypt C:|project|DlProject|Decrypt.sch</ClosedNode>
          <ClosedNode>/Encrypt C:|Users|Ali|Documents|Xilinx|CryptographyProject|Encrypt.sch</ClosedNode>
          <ClosedNode>/Encrypt C:|Users|Ali|Documents|Xilinx|CryptographyProject|Encrypt.sch/KEYGenerator - Key</ClosedNode>
          <ClosedNode>/Encrypt C:|Users|Ali|Documents|Xilinx|CryptographyProject|Encrypt.sch/XLXI_3 - round</ClosedNode>
          <ClosedNode>/Encrypt C:|Users|Ali|Documents|Xilinx|CryptographyProject|Encrypt.sch/XLXI_4 - round</ClosedNode>
+         <ClosedNode>/Encrypt C:|project|DlProject|Encrypt.sch</ClosedNode>
          <ClosedNode>/Encrypt P:|Xilinx|Project|DlProject|Encrypt.sch</ClosedNode>
          <ClosedNode>/F_Function P:|Xilinx|Project|DlProject|F_Function.sch</ClosedNode>
          <ClosedNode>/Key P:|Xilinx|Project|DlProject|Key.sch</ClosedNode>
@@ -112,12 +114,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
 </Project>
