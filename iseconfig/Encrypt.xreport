@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-02-01T12:43:59</DateModified>
+  <DateModified>2021-02-02T20:32:54</DateModified>
   <ModuleName>Encrypt</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/project/DlProject/iseconfig/Encrypt.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/project/DlProject\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Ali/Documents/Xilinx/CryptographyProject/iseconfig/Encrypt.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Ali/Documents/Xilinx/CryptographyProject\</ImplementationReportsDirectory>
   <DateInitialized>2021-01-31T11:35:57</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
