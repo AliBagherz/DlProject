@@ -1,38 +1,38 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o C:/Users/Ali/Documents/Xilinx/CryptographyProject/Decrypt_isim_beh.exe -prj C:/Users/Ali/Documents/Xilinx/CryptographyProject/Decrypt_beh.prj work.Decrypt work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o P:/Xilinx/Project/DlProject-master/Encrypt_isim_beh.exe -prj P:/Xilinx/Project/DlProject-master/Encrypt_beh.prj work.Encrypt work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 12
 Turning on mult-threading, number of parallel sub-compilation jobs: 24 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Xor8Bit.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/S1.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/S0.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/P4.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/EP.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Xor4Bit.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/P8.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/P10.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/LS2.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/LS1.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/F_Function.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/SW.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/round.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Key.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/IP1.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/IP.vf" into library work
-Analyzing Verilog file "C:/Users/Ali/Documents/Xilinx/CryptographyProject/Decrypt.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/Xor8Bit.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/S1.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/S0.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/P4.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/EP.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/Xor4Bit.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/P8.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/P10.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/LS2.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/LS1.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/F_Function.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/SW.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/round.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/Key.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/IP1.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/IP.vf" into library work
+Analyzing Verilog file "P:/Xilinx/Project/DlProject-master/Encrypt.vf" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling module BUF
-Compiling module IP_MUSER_Decrypt
-Compiling module IP1_MUSER_Decrypt
-Compiling module LS1_MUSER_Decrypt
-Compiling module LS2_MUSER_Decrypt
-Compiling module P8_MUSER_Decrypt
-Compiling module P10_MUSER_Decrypt
-Compiling module Key_MUSER_Decrypt
-Compiling module EP_MUSER_Decrypt
-Compiling module P4_MUSER_Decrypt
+Compiling module IP_MUSER_Encrypt
+Compiling module IP1_MUSER_Encrypt
+Compiling module LS1_MUSER_Encrypt
+Compiling module LS2_MUSER_Encrypt
+Compiling module P8_MUSER_Encrypt
+Compiling module P10_MUSER_Encrypt
+Compiling module Key_MUSER_Encrypt
+Compiling module EP_MUSER_Encrypt
+Compiling module P4_MUSER_Encrypt
 Compiling module AND3B2
 Compiling module AND3B1
 Compiling module AND3
@@ -40,20 +40,18 @@ Compiling module OR5
 Compiling module AND2B2
 Compiling module AND2B1
 Compiling module OR4
-Compiling module S0_MUSER_Decrypt
-Compiling module S1_MUSER_Decrypt
+Compiling module S0_MUSER_Encrypt
+Compiling module S1_MUSER_Encrypt
 Compiling module XOR2
-Compiling module Xor8Bit_MUSER_Decrypt
-Compiling module F_Function_MUSER_Decrypt
-Compiling module Xor4Bit_MUSER_Decrypt
-Compiling module round_MUSER_Decrypt
-Compiling module SW_MUSER_Decrypt
-Compiling module Decrypt
+Compiling module Xor8Bit_MUSER_Encrypt
+Compiling module F_Function_MUSER_Encrypt
+Compiling module Xor4Bit_MUSER_Encrypt
+Compiling module round_MUSER_Encrypt
+Compiling module SW_MUSER_Encrypt
+Compiling module Encrypt
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\Decrypt_isim_beh.exe.sim\libPortability.dll".
 Compiled 27 Verilog Units
-Built simulation executable C:/Users/Ali/Documents/Xilinx/CryptographyProject/Decrypt_isim_beh.exe
-Fuse Memory Usage: 28828 KB
-Fuse CPU Usage: 389 ms
+Built simulation executable P:/Xilinx/Project/DlProject-master/Encrypt_isim_beh.exe
+Fuse Memory Usage: 28908 KB
+Fuse CPU Usage: 405 ms

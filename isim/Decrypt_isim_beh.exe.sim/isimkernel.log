@@ -2,14 +2,14 @@ Command line:
    Decrypt_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  6524
+     -socket  2346
 
-Sun Jan 31 13:50:09 2021
+Sat Feb 06 13:27:27 2021
 
 
  Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 5155.54 Meg
+ Current Memory Usage: 5155.36 Meg
 
  Total Signals          : 1113
  Total Nets             : 257
@@ -22,7 +22,7 @@ Sun Jan 31 13:50:09 2021
 
  Total Simulation Time: 0.171875 sec
 
- Current Memory Usage: 4998.25 Meg
+ Current Memory Usage: 5155.36 Meg
 
-Sun Jan 31 13:51:47 2021
+Sat Feb 06 13:27:38 2021
 

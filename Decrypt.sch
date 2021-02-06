@@ -252,7 +252,7 @@
             <blockpin signalname="XLXN_253" name="K2_6" />
             <blockpin signalname="XLXN_254" name="K2_7" />
         </block>
-        <block symbolname="IP" name="IP">
+        <block symbolname="IP" name="IP_0">
             <blockpin signalname="C0" name="B0" />
             <blockpin signalname="C1" name="B1" />
             <blockpin signalname="C2" name="B2" />
@@ -296,7 +296,7 @@
             <blockpin signalname="XLXN_131" name="O6" />
             <blockpin signalname="XLXN_132" name="O7" />
         </block>
-        <block symbolname="IP1" name="IP1">
+        <block symbolname="IP1" name="IP1_0">
             <blockpin signalname="XLXN_73" name="B0" />
             <blockpin signalname="XLXN_72" name="B1" />
             <blockpin signalname="XLXN_71" name="B2" />
@@ -340,7 +340,7 @@
             <blockpin signalname="XLXN_67" name="O6" />
             <blockpin signalname="XLXN_66" name="O7" />
         </block>
-        <block symbolname="SW" name="SW">
+        <block symbolname="SW" name="SW_0">
             <blockpin signalname="XLXN_166" name="B0" />
             <blockpin signalname="XLXN_126" name="B1" />
             <blockpin signalname="XLXN_127" name="B2" />
@@ -433,7 +433,7 @@
         <branch name="C7">
             <wire x2="448" y1="816" y2="816" x1="416" />
         </branch>
-        <instance x="448" y="848" name="IP" orien="R0">
+        <instance x="448" y="848" name="IP_0" orien="R0">
         </instance>
         <branch name="XLXN_127">
             <wire x2="1568" y1="752" y2="752" x1="1552" />
@@ -522,12 +522,12 @@
         <branch name="XLXN_73">
             <wire x2="2928" y1="624" y2="624" x1="2896" />
         </branch>
-        <instance x="2928" y="1104" name="IP1" orien="R0">
+        <instance x="2928" y="1104" name="IP1_0" orien="R0">
         </instance>
         <instance x="2224" y="1184" name="Round2" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
-        <instance x="1776" y="736" name="SW" orien="R0">
+        <instance x="1776" y="736" name="SW_0" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
         <branch name="XLXN_166">

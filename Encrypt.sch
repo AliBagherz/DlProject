@@ -252,7 +252,7 @@
             <blockpin signalname="XLXN_115" name="K2_6" />
             <blockpin signalname="XLXN_116" name="K2_7" />
         </block>
-        <block symbolname="IP" name="IP">
+        <block symbolname="IP" name="IP_0">
             <blockpin signalname="P0" name="B0" />
             <blockpin signalname="P1" name="B1" />
             <blockpin signalname="P2" name="B2" />
@@ -322,7 +322,7 @@
             <blockpin signalname="XLXN_15" name="O6" />
             <blockpin signalname="XLXN_16" name="O7" />
         </block>
-        <block symbolname="SW" name="SW">
+        <block symbolname="SW" name="SW_0">
             <blockpin signalname="XLXN_166" name="B0" />
             <blockpin signalname="XLXN_126" name="B1" />
             <blockpin signalname="XLXN_127" name="B2" />
@@ -340,7 +340,7 @@
             <blockpin signalname="XLXN_241" name="O6" />
             <blockpin signalname="XLXN_242" name="O7" />
         </block>
-        <block symbolname="IP1" name="IP1">
+        <block symbolname="IP1" name="IP1_0">
             <blockpin signalname="XLXN_9" name="B0" />
             <blockpin signalname="XLXN_10" name="B1" />
             <blockpin signalname="XLXN_11" name="B2" />
@@ -490,7 +490,7 @@
             <wire x2="528" y1="880" y2="880" x1="496" />
         </branch>
         <iomarker fontsize="28" x="496" y="880" name="P7" orien="R180" />
-        <instance x="528" y="912" name="IP" orien="R0">
+        <instance x="528" y="912" name="IP_0" orien="R0">
         </instance>
         <branch name="XLXN_127">
             <wire x2="1648" y1="816" y2="816" x1="1632" />
@@ -643,7 +643,7 @@
         <branch name="XLXN_9">
             <wire x2="3008" y1="688" y2="688" x1="2976" />
         </branch>
-        <instance x="3008" y="1168" name="IP1" orien="R0">
+        <instance x="3008" y="1168" name="IP1_0" orien="R0">
         </instance>
         <iomarker fontsize="28" x="3424" y="688" name="C0" orien="R0" />
         <iomarker fontsize="28" x="3424" y="752" name="C1" orien="R0" />
@@ -656,7 +656,7 @@
         <instance x="2304" y="1248" name="Round2" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
-        <instance x="1856" y="800" name="SW" orien="R0">
+        <instance x="1856" y="800" name="SW_0" orien="R0">
         </instance>
         <branch name="XLXN_166">
             <wire x2="1648" y1="688" y2="688" x1="1632" />

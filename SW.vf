@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : SW.vf
-// /___/   /\     Timestamp : 01/31/2021 11:53:00
+// /___/   /\     Timestamp : 02/06/2021 13:25:44
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject/SW.vf -w P:/Xilinx/Project/DlProject/SW.sch
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject-master/SW.vf -w P:/Xilinx/Project/DlProject-master/SW.sch
 //Design Name: SW
 //Device: xc9500xl
 //Purpose:

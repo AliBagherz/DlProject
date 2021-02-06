@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Decrypt.vf
-// /___/   /\     Timestamp : 01/31/2021 13:50:04
+// /___/   /\     Timestamp : 02/06/2021 13:27:21
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/Users/Ali/Documents/Xilinx/CryptographyProject/Decrypt.vf -w C:/Users/Ali/Documents/Xilinx/CryptographyProject/Decrypt.sch
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject-master/Decrypt.vf -w P:/Xilinx/Project/DlProject-master/Decrypt.sch
 //Design Name: Decrypt
 //Device: xc9500xl
 //Purpose:
@@ -540,10 +540,10 @@ module round_MUSER_Decrypt(A0,
                            A1, 
                            A2, 
                            A3, 
-                           I0, 
-                           I1, 
-                           I2, 
-                           I3, 
+                           A4, 
+                           A5, 
+                           A6, 
+                           A7, 
                            K0, 
                            K1, 
                            K2, 
@@ -556,19 +556,19 @@ module round_MUSER_Decrypt(A0,
                            O1, 
                            O2, 
                            O3, 
-                           XO0, 
-                           XO1, 
-                           XO2, 
-                           XO3);
+                           O4, 
+                           O5, 
+                           O6, 
+                           O7);
 
     input A0;
     input A1;
     input A2;
     input A3;
-    input I0;
-    input I1;
-    input I2;
-    input I3;
+    input A4;
+    input A5;
+    input A6;
+    input A7;
     input K0;
     input K1;
     input K2;
@@ -581,52 +581,52 @@ module round_MUSER_Decrypt(A0,
    output O1;
    output O2;
    output O3;
-   output XO0;
-   output XO1;
-   output XO2;
-   output XO3;
+   output O4;
+   output O5;
+   output O6;
+   output O7;
    
    wire XLXN_1;
    wire XLXN_2;
    wire XLXN_3;
    wire XLXN_4;
    
-   BUF  XLXI_3 (.I(A0), 
-               .O(O0));
-   BUF  XLXI_4 (.I(A1), 
-               .O(O1));
-   BUF  XLXI_5 (.I(A2), 
-               .O(O2));
-   BUF  XLXI_6 (.I(A3), 
-               .O(O3));
-   F_Function_MUSER_Decrypt  XLXI_8 (.A0(A0), 
-                                    .A1(A1), 
-                                    .A2(A2), 
-                                    .A3(A3), 
-                                    .K0(K0), 
-                                    .K1(K1), 
-                                    .K2(K2), 
-                                    .K3(K3), 
-                                    .K4(K4), 
-                                    .K5(K5), 
-                                    .K6(K6), 
-                                    .K7(K7), 
-                                    .O0(XLXN_1), 
-                                    .O1(XLXN_2), 
-                                    .O2(XLXN_3), 
-                                    .O3(XLXN_4));
-   Xor4Bit_MUSER_Decrypt  XOR4 (.A0(I0), 
-                               .A1(I1), 
-                               .A2(I2), 
-                               .A3(I3), 
+   F_Function_MUSER_Decrypt  FFUNCTION (.A0(A4), 
+                                       .A1(A5), 
+                                       .A2(A6), 
+                                       .A3(A7), 
+                                       .K0(K0), 
+                                       .K1(K1), 
+                                       .K2(K2), 
+                                       .K3(K3), 
+                                       .K4(K4), 
+                                       .K5(K5), 
+                                       .K6(K6), 
+                                       .K7(K7), 
+                                       .O0(XLXN_1), 
+                                       .O1(XLXN_2), 
+                                       .O2(XLXN_3), 
+                                       .O3(XLXN_4));
+   BUF  XLXI_3 (.I(A4), 
+               .O(O4));
+   BUF  XLXI_4 (.I(A5), 
+               .O(O5));
+   BUF  XLXI_5 (.I(A6), 
+               .O(O6));
+   BUF  XLXI_6 (.I(A7), 
+               .O(O7));
+   Xor4Bit_MUSER_Decrypt  XOR4 (.A0(A0), 
+                               .A1(A1), 
+                               .A2(A2), 
+                               .A3(A3), 
                                .B0(XLXN_1), 
                                .B1(XLXN_2), 
                                .B2(XLXN_3), 
                                .B3(XLXN_4), 
-                               .O0(XO0), 
-                               .O1(XO1), 
-                               .O2(XO2), 
-                               .O3(XO3));
+                               .O0(O0), 
+                               .O1(O1), 
+                               .O2(O2), 
+                               .O3(O3));
 endmodule
 `timescale 1ns / 1ps
 
@@ -1122,17 +1122,7 @@ module Key_MUSER_Decrypt(A0,
 endmodule
 `timescale 1ns / 1ps
 
-module Decrypt(A0, 
-               A1, 
-               A2, 
-               A3, 
-               A4, 
-               A5, 
-               A6, 
-               A7, 
-               A8, 
-               A9, 
-               C0, 
+module Decrypt(C0, 
                C1, 
                C2, 
                C3, 
@@ -1140,6 +1130,16 @@ module Decrypt(A0,
                C5, 
                C6, 
                C7, 
+               K0, 
+               K1, 
+               K2, 
+               K3, 
+               K4, 
+               K5, 
+               K6, 
+               K7, 
+               K8, 
+               K9, 
                P0, 
                P1, 
                P2, 
@@ -1149,16 +1149,6 @@ module Decrypt(A0,
                P6, 
                P7);
 
-    input A0;
-    input A1;
-    input A2;
-    input A3;
-    input A4;
-    input A5;
-    input A6;
-    input A7;
-    input A8;
-    input A9;
     input C0;
     input C1;
     input C2;
@@ -1167,6 +1157,16 @@ module Decrypt(A0,
     input C5;
     input C6;
     input C7;
+    input K0;
+    input K1;
+    input K2;
+    input K3;
+    input K4;
+    input K5;
+    input K6;
+    input K7;
+    input K8;
+    input K9;
    output P0;
    output P1;
    output P2;
@@ -1225,22 +1225,22 @@ module Decrypt(A0,
    wire XLXN_261;
    wire XLXN_262;
    
-   IP_MUSER_Decrypt  IP0 (.B0(C0), 
-                         .B1(C1), 
-                         .B2(C2), 
-                         .B3(C3), 
-                         .B4(C4), 
-                         .B5(C5), 
-                         .B6(C6), 
-                         .B7(C7), 
-                         .O0(XLXN_151), 
-                         .O1(XLXN_152), 
-                         .O2(XLXN_153), 
-                         .O3(XLXN_155), 
-                         .O4(XLXN_17), 
-                         .O5(XLXN_18), 
-                         .O6(XLXN_19), 
-                         .O7(XLXN_20));
+   IP_MUSER_Decrypt  IP_0 (.B0(C0), 
+                          .B1(C1), 
+                          .B2(C2), 
+                          .B3(C3), 
+                          .B4(C4), 
+                          .B5(C5), 
+                          .B6(C6), 
+                          .B7(C7), 
+                          .O0(XLXN_151), 
+                          .O1(XLXN_152), 
+                          .O2(XLXN_153), 
+                          .O3(XLXN_155), 
+                          .O4(XLXN_17), 
+                          .O5(XLXN_18), 
+                          .O6(XLXN_19), 
+                          .O7(XLXN_20));
    IP1_MUSER_Decrypt  IP1_0 (.B0(XLXN_73), 
                             .B1(XLXN_72), 
                             .B2(XLXN_71), 
@@ -1257,16 +1257,16 @@ module Decrypt(A0,
                             .O5(P5), 
                             .O6(P6), 
                             .O7(P7));
-   Key_MUSER_Decrypt  KEYGenerator (.A0(A0), 
-                                   .A1(A1), 
-                                   .A2(A2), 
-                                   .A3(A3), 
-                                   .A4(A4), 
-                                   .A5(A5), 
-                                   .A6(A6), 
-                                   .A7(A7), 
-                                   .A8(A8), 
-                                   .A9(A9), 
+   Key_MUSER_Decrypt  KEYGenerator (.A0(K0), 
+                                   .A1(K1), 
+                                   .A2(K2), 
+                                   .A3(K3), 
+                                   .A4(K4), 
+                                   .A5(K5), 
+                                   .A6(K6), 
+                                   .A7(K7), 
+                                   .A8(K8), 
+                                   .A9(K9), 
                                    .K1_0(XLXN_262), 
                                    .K1_1(XLXN_261), 
                                    .K1_2(XLXN_260), 
@@ -1283,14 +1283,14 @@ module Decrypt(A0,
                                    .K2_5(XLXN_252), 
                                    .K2_6(XLXN_253), 
                                    .K2_7(XLXN_254));
-   round_MUSER_Decrypt  XLXI_3 (.A0(XLXN_17), 
-                               .A1(XLXN_18), 
-                               .A2(XLXN_19), 
-                               .A3(XLXN_20), 
-                               .I0(XLXN_151), 
-                               .I1(XLXN_152), 
-                               .I2(XLXN_153), 
-                               .I3(XLXN_155), 
+   round_MUSER_Decrypt  Round1 (.A0(XLXN_151), 
+                               .A1(XLXN_152), 
+                               .A2(XLXN_153), 
+                               .A3(XLXN_155), 
+                               .A4(XLXN_17), 
+                               .A5(XLXN_18), 
+                               .A6(XLXN_19), 
+                               .A7(XLXN_20), 
                                .K0(XLXN_247), 
                                .K1(XLXN_248), 
                                .K2(XLXN_249), 
@@ -1299,22 +1299,22 @@ module Decrypt(A0,
                                .K5(XLXN_252), 
                                .K6(XLXN_253), 
                                .K7(XLXN_254), 
-                               .O0(XLXN_129), 
-                               .O1(XLXN_130), 
-                               .O2(XLXN_131), 
-                               .O3(XLXN_132), 
-                               .XO0(XLXN_166), 
-                               .XO1(XLXN_126), 
-                               .XO2(XLXN_127), 
-                               .XO3(XLXN_128));
-   round_MUSER_Decrypt  XLXI_4 (.A0(XLXN_239), 
-                               .A1(XLXN_240), 
-                               .A2(XLXN_241), 
-                               .A3(XLXN_242), 
-                               .I0(XLXN_246), 
-                               .I1(XLXN_245), 
-                               .I2(XLXN_244), 
-                               .I3(XLXN_243), 
+                               .O0(XLXN_166), 
+                               .O1(XLXN_126), 
+                               .O2(XLXN_127), 
+                               .O3(XLXN_128), 
+                               .O4(XLXN_129), 
+                               .O5(XLXN_130), 
+                               .O6(XLXN_131), 
+                               .O7(XLXN_132));
+   round_MUSER_Decrypt  Round2 (.A0(XLXN_246), 
+                               .A1(XLXN_245), 
+                               .A2(XLXN_244), 
+                               .A3(XLXN_243), 
+                               .A4(XLXN_239), 
+                               .A5(XLXN_240), 
+                               .A6(XLXN_241), 
+                               .A7(XLXN_242), 
                                .K0(XLXN_262), 
                                .K1(XLXN_261), 
                                .K2(XLXN_260), 
@@ -1323,28 +1323,28 @@ module Decrypt(A0,
                                .K5(XLXN_257), 
                                .K6(XLXN_256), 
                                .K7(XLXN_255), 
-                               .O0(XLXN_69), 
-                               .O1(XLXN_68), 
-                               .O2(XLXN_67), 
-                               .O3(XLXN_66), 
-                               .XO0(XLXN_73), 
-                               .XO1(XLXN_72), 
-                               .XO2(XLXN_71), 
-                               .XO3(XLXN_70));
-   SW_MUSER_Decrypt  XLXI_5 (.B0(XLXN_166), 
-                            .B1(XLXN_126), 
-                            .B2(XLXN_127), 
-                            .B3(XLXN_128), 
-                            .B4(XLXN_129), 
-                            .B5(XLXN_130), 
-                            .B6(XLXN_131), 
-                            .B7(XLXN_132), 
-                            .O0(XLXN_246), 
-                            .O1(XLXN_245), 
-                            .O2(XLXN_244), 
-                            .O3(XLXN_243), 
-                            .O4(XLXN_239), 
-                            .O5(XLXN_240), 
-                            .O6(XLXN_241), 
-                            .O7(XLXN_242));
+                               .O0(XLXN_73), 
+                               .O1(XLXN_72), 
+                               .O2(XLXN_71), 
+                               .O3(XLXN_70), 
+                               .O4(XLXN_69), 
+                               .O5(XLXN_68), 
+                               .O6(XLXN_67), 
+                               .O7(XLXN_66));
+   SW_MUSER_Decrypt  SW_0 (.B0(XLXN_166), 
+                          .B1(XLXN_126), 
+                          .B2(XLXN_127), 
+                          .B3(XLXN_128), 
+                          .B4(XLXN_129), 
+                          .B5(XLXN_130), 
+                          .B6(XLXN_131), 
+                          .B7(XLXN_132), 
+                          .O0(XLXN_246), 
+                          .O1(XLXN_245), 
+                          .O2(XLXN_244), 
+                          .O3(XLXN_243), 
+                          .O4(XLXN_239), 
+                          .O5(XLXN_240), 
+                          .O6(XLXN_241), 
+                          .O7(XLXN_242));
 endmodule

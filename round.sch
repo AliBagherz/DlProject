@@ -132,7 +132,7 @@
             <blockpin signalname="A7" name="I" />
             <blockpin signalname="O7" name="O" />
         </block>
-        <block symbolname="F_Function" name="XLXI_8">
+        <block symbolname="F_Function" name="FFUNCTION">
             <blockpin signalname="A4" name="A0" />
             <blockpin signalname="A5" name="A1" />
             <blockpin signalname="A6" name="A2" />
@@ -291,7 +291,7 @@
             <wire x2="672" y1="416" y2="416" x1="608" />
             <wire x2="672" y1="416" y2="624" x1="672" />
         </branch>
-        <instance x="800" y="1296" name="XLXI_8" orien="R0">
+        <instance x="800" y="1296" name="FFUNCTION" orien="R0">
         </instance>
     </sheet>
 </drawing>

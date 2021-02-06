@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : F_Function.vf
-// /___/   /\     Timestamp : 01/31/2021 13:32:25
+// /___/   /\     Timestamp : 02/06/2021 13:25:45
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family xc9500xl -verilog C:/Users/Ali/Documents/Xilinx/CryptographyProject/F_Function.vf -w C:/Users/Ali/Documents/Xilinx/CryptographyProject/F_Function.sch
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject-master/F_Function.vf -w P:/Xilinx/Project/DlProject-master/F_Function.sch
 //Design Name: F_Function
 //Device: xc9500xl
 //Purpose:

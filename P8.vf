@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : P8.vf
-// /___/   /\     Timestamp : 01/31/2021 09:55:39
+// /___/   /\     Timestamp : 02/06/2021 13:25:43
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject/P8.vf -w P:/Xilinx/Project/DlProject/P8.sch
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog P:/Xilinx/Project/DlProject-master/P8.vf -w P:/Xilinx/Project/DlProject-master/P8.sch
 //Design Name: P8
 //Device: xc9500xl
 //Purpose:
